@@ -1,645 +1,872 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edjabrou Ulrich Blanchard KABLAM - Portfolio Data &amp; IA</title>
+  <meta name="description" content="Portfolio de Kablam Edjabrou Ulrich Blanchard - Professeur de Collège (ENS) & Développeur en Intelligence Artificielle.">
 
-  <title>Mon Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Google Fonts (Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume - v4.6.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="100">
 
-<body>
+  <!-- ============================================ -->
+  <!-- Navigation Header                            -->
+  <!-- ============================================ -->
+  <nav id="navbar-main" class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#hero" id="nav-logo">
+        E. U. B. <span>KABLAM</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="mobile-nav-toggle">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>A propos de moi</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Expériences professionnelles</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Photos</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Edjabrou Ulrich <br> <br> Blanchard KABLAM</h1>
-      <p>Je suis <span class="typed" data-typed-items="Data Scientist, Developpeur Intelligence Aritificielle IA"></span></p>
-      <div class="social-links">
-        <a href="https://twitter.com/home" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://web.facebook.com/?_rdc=1&_rdr" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://github.com/bkablam11?tab=repositories" class="google-plus"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/edjabrou-ulrich-blanchard-kablam-872b3a195/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-menu navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#hero" id="nav-link-hero">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" id="nav-link-about">À Propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" id="nav-link-skills">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience" id="nav-link-experience">Parcours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio" id="nav-link-portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials" id="nav-link-testimonials">Témoignages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" id="nav-link-contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </nav>
 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>A propos de Moi</h2>
-          <p class="fonts_text" >Je mets à votre disposition mon portfolio afin de vous proposer mes services en tant que
-DEVELOPPEUR EN INTELLIGENCE ARTIFICIELLE. Au vu des activités effectuées et en cours
-dans votre structure, j’ai la conviction que je pourrai vous aider à atteindre
-vos objectifs. Mes compétences et expériences professionnelles sont ci-dessous.</p>
+  <!-- ============================================ -->
+  <!-- Hero Section                                 -->
+  <!-- ============================================ -->
+  <section id="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <span class="hero-badge" id="hero-badge">
+            <i class="bi bi-stars me-1"></i> Professeur de Collège (ENS) &amp; Développeur en Intelligence Artificielle
+          </span>
+          <h1 id="hero-title">
+            Edjabrou Ulrich Blanchard <br><span>KABLAM</span>
+          </h1>
+          <div class="typed-text-wrapper" id="hero-subtitle">
+            Je suis <span class="typed-text"></span>
+          </div>
+          <p class="lead text-light opacity-75 mb-4 max-w-xl" id="hero-description">
+            Professeur de mathématiques, passionné par l'innovation pédagogique et le développement d'applications intelligentes, avec une expertise en IA, Data Science, automatisation, vision par ordinateur et solutions web.
+          </p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start" id="hero-cta">
+            <a href="#portfolio" class="btn btn-custom-primary">
+              <i class="bi bi-grid-fill"></i> Explorer mes projets
+            </a>
+            <a href="#contact" class="btn btn-custom-outline">
+              <i class="bi bi-envelope-fill"></i> Me contacter
+            </a>
+          </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+        <div class="col-lg-5 text-center">
+          <div class="hero-img-container" id="hero-image-wrapper">
+            <img src="assets/img/me/profile-img.png" alt="Edjabrou Ulrich Blanchard KABLAM" class="hero-img img-fluid" id="profile-image">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3> Postes Visés : Developpeur Data IA - Data Scientist - Data Analyst - Data engineer</h3>
-            <p class="fst-italic">
-              Etant à MTN Academy By Simplon, je travaille sur des projets réels de traitement, d’analyse et de prise de décisions basées sur les données.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- À Propos                                     -->
+  <!-- ============================================ -->
+  <section id="about" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="about-heading">À Propos de moi</h2>
+        <p>Découvrez mon profil, ma passion pour les données et ma vision technologique.</p>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <div class="about-card">
+            <h3 class="fw-bold mb-3" id="about-subheading">Professeur de Collège (ENS) &amp; Développeur en Intelligence Artificielle</h3>
+            <p class="text-secondary mb-4">
+              Je suis Kablam Edjabrou Ulrich Blanchard, enseignant de mathématiques et développeur IA passionné par l'innovation pédagogique, l'automatisation et la transformation numérique. Mon parcours associe l'enseignement, la recherche mathématique et la création de solutions intelligentes concrètes.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age : </strong> <span>24 ans</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Situation Matrimoniale : </strong> <span>Célibataire sans enfant</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Permis de Conduire :</strong> <span>Toutes catégories</span></li>
-                </ul>
+            <p class="text-secondary mb-4">
+              J'interviens sur des projets d'automatisation, d'analyse de données, de vision par ordinateur, de reconnaissance vocale et de développement web, avec un souci constant d'appliquer la technologie à des problèmes réels et utiles.
+            </p>
+
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="about-info-item">
+                  <i class="bi bi-person-fill"></i>
+                  <div><strong>Nom complet :</strong> Kablam Edjabrou Ulrich Blanchard</div>
+                </div>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Nombre d'années d'expérience : </strong> <span>2 Ans</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Niveau d'Etude : </strong> <span>Licence</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Spécialité : </strong> <span>Mathématiques</span></li>
-                </ul>
+              <div class="col-sm-6">
+                <div class="about-info-item">
+                  <i class="bi bi-telephone-fill"></i>
+                  <div><strong>Téléphone :</strong> +225 07 48 78 22 05</div>
+                </div>
               </div>
+              <div class="col-sm-6">
+                <div class="about-info-item">
+                  <i class="bi bi-whatsapp"></i>
+                  <div><strong>WhatsApp :</strong> +225 07 77 51 86 95</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="about-info-item">
+                  <i class="bi bi-envelope-fill"></i>
+                  <div><strong>Email :</strong> bkablam11@gmail.com</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="about-info-item">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <div><strong>Localisation :</strong> Abobo Akeikoi, Abidjan, Côte d'Ivoire</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="about-info-item">
+                  <i class="bi bi-github"></i>
+                  <div><strong>GitHub :</strong> <a href="https://github.com/bkablam11" target="_blank" rel="noopener">/bkablam11</a></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="about-info-item">
+                  <i class="bi bi-linkedin"></i>
+                  <div><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/edjabrou-ulrich-blanchard-kablam-872b3a195/" target="_blank" rel="noopener">/blanchard-kablam</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-2">
+              <a href="#contact" class="btn btn-primary rounded-pill px-4 me-2">
+                <i class="bi bi-chat-dots-fill me-1"></i> Discutons de vos projets
+              </a>
             </div>
           </div>
         </div>
 
+        <div class="col-lg-5">
+          <div class="about-photo-panel">
+            <div class="about-photo-main">
+              <img src="assets/img/me/wac.jpg" alt="Kablam lors d'un atelier ou projet collaboratif">
+            </div>
+            <div class="about-photo-stack">
+              <div class="about-photo-small">
+                <img src="assets/img/me/cnr.jpg" alt="Kablam lors d'un événement africain digital">
+              </div>
+              <div class="about-photo-small">
+                <img src="assets/img/me/cnr2.jpg" alt="Kablam en contexte festif professionnel">
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-3 mt-3">
+            <div class="col-6">
+              <div class="stat-box" id="stat-projects">
+                <h3>50+</h3>
+                <p>Projets Data &amp; IA</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-box" id="stat-experience">
+                <h3>7+</h3>
+                <p>Années d'Expérience</p>
+              </div>
+            </div>
+          
+            
+          </div>
+        </div>
       </div>
-    </section><!-- End About Section -->
+    </div>
+  </section>
 
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Mon portfolio en Chiffres</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Collaborateurs</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projets</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="72" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Nombre d'heures Moyennes par projets</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Nombre de Certification</p>
-            </div>
-          </div>
-
-        </div>
-
+  <!-- ============================================ -->
+  <!-- Compétences                                  -->
+  <!-- ============================================ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="skills-heading">Compétences Techniques</h2>
+        <p>Un ensemble de compétences multidisciplinaires couvrant l'ensemble du cycle de vie des données.</p>
       </div>
-    </section><!-- End Facts Section -->
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Compétences Techniques</h2>
-        </div>
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+      <div class="row g-4">
+        <!-- Skill 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card" id="skill-card-ia">
+            <div class="skill-icon">
+              <i class="bi bi-cpu"></i>
             </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <h4>Langages &amp; Frameworks</h4>
+            <p class="text-muted small mb-3">Python, R, Bash, PHP, JavaScript, Dart, Flutter, Flask, Django, OpenCV, SpeechRecognition, LaTeX, HTML/CSS, MySQL, PostgreSQL.</p>
+            <div>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Dart</span>
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">SpeechRecognition</span>
+              <span class="skill-tag">LaTeX</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
             </div>
-
-            <div class="progress">
-              <span class="skill">SQL <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
           </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Machine Learning &amp; Deep Learning <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
         </div>
 
+        <!-- Skill 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card" id="skill-card-engineering">
+            <div class="skill-icon">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <h4>Data Science &amp; IA</h4>
+            <p class="text-muted small mb-3">Analyse de données, Big Data, projets Data Science, automatisation intelligente et solutions basées sur l'IA.</p>
+            <div>
+              <span class="skill-tag">Data Science</span>
+              <span class="skill-tag">Big Data</span>
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">IA</span>
+              <span class="skill-tag">Vision par ordinateur</span>
+              <span class="skill-tag">Reconnaissance vocale</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card" id="skill-card-analytics">
+            <div class="skill-icon">
+              <i class="bi bi-bar-chart-line"></i>
+            </div>
+            <h4>Outils &amp; Systèmes</h4>
+            <p class="text-muted small mb-3">Utilisation professionnelle des systèmes et outils de travail collaboratif, analyse et production.</p>
+            <div>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Windows</span>
+              <span class="skill-tag">macOS</span>
+              <span class="skill-tag">Git/GitHub</span>
+              <span class="skill-tag">Jupyter</span>
+              <span class="skill-tag">Word</span>
+              <span class="skill-tag">Excel</span>
+              <span class="skill-tag">PowerPoint</span>
+              <span class="skill-tag">OneNote</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card" id="skill-card-ops">
+            <div class="skill-icon">
+              <i class="bi bi-cloud-check"></i>
+            </div>
+            <h4>Projets &amp; Innovation</h4>
+            <p class="text-muted small mb-3">Développement d'outils concrets, applications utiles et solutions intelligentes orientées pédagogie et productivité.</p>
+            <div>
+              <span class="skill-tag">PrintPay</span>
+              <span class="skill-tag">Émargement IA</span>
+              <span class="skill-tag">Moyenne</span>
+              <span class="skill-tag">Gaming Site</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- End Skills Section -->
+    </div>
+  </section>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Expériences Professionnelles</h2>
-          </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Licence en Mathématiques</h4>
-              <h5>2016 - 2019 </h5>
-              <p><em>SFA, Université nangui Abrogoua (Abobo Adjamé)</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Baccalauréat Scientifique</h4>
-              <h5>2012 - 2015</h5>
-              <p><em>Lycée Classique Abidjan</em></p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Experiences Professionnelles</h3>
-            <div class="resume-item">
-              <h4>Développeur en Intelligence Artificielle</h4>
-              <h5>Avril 2021 - Present (7 mois) </h5>
-              <p><em>MTN Academy by Simplon </em></p>
-              <ul>
-                <li>Axé sur le développement de modèles d’apprentissage supervisé,
-non supervisé et par renforcement, les tests, la mise à l’échelle, le
-déploiement dans des entreprises</li>
-                <li>Projects: Automatisation de fiches de Présence, Reconnaissance
-d’image, Reconnaissance vocale (Speech to Text and Text to
-speech) </li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Data Scientist Junior à Sejenci</h4>
-              <h5>Août 2019 - Fevrier 2020</h5>
-              <p><em>Ensea Cocody, Abidjan</em></p>
-              <ul>
-                <li>Projet des Chiffres et des Jeunes</li>
-                <li>Application de Numérisation des dossiers des patients pour de meilleurs soins <a href="https://developmentgateway.org/blog/digitizing-patient-records-for-improved-patient-care/">(voir plus)</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <h3 class="resume-title">Coucours du Ministère</h3>
-            <div class="resume-item pb-0">
-              <h4>Féliciter par Mr Roger Adon : Ministre de l'Economie Numérique</h4>
-              <p><em>J'ai eu l'immense honneur de participer au concours African Digital Week 2021</em></p>
-              <ul>
-                <li> <a href="https://www.youtube.com/watch?v=dPzCTStXU-8"> Coucours en ligne sur youtube</a></li>
-                <li> Page Youtube : African Digital Week
-</li>
-                <li>Projet réalisé : SafeCity <a href="https://www.figma.com/proto/R2OGmjlqYdcZHiBPlizTQb/Safe-City?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2">voir la maquette</a></li>
-              </ul>
-            </div>
-            <h3 class="resume-title">Formation de Jeunes filles: Projet Tantie Bagages</h3>
-            <div class="resume-item pb-0">
-              <h4>Apprenti - formateur avec Mr Manzan</h4>
-              <p><em>Formation sur le focntionnement de l'internet et du web ainsi que les dangers de ces outils</em></p>
-              <ul>
-                <li>Manzan</li>
-                <li>(+225) 07 07 14 99 51</li>
-                <li><a href="https://web.facebook.com/tantiebagagesos/photos/?ref=page_internal"> Facebook tantie-bagage</a> </li>
-              </ul>
-            </div>
-        <h3 class="resume-title">Activité Extra-professionnelle</h3>
-            <div class="resume-item pb-0">
-              <h4>Ouatt Sono</h4>
-              <p><em>Annimateur de cérémonies, de baptèmes, Mariages et anniversaires</em></p>
-              <ul>
-                <li>Ouattara djibril</li>
-                <li>(+225) 01 41 05 27 16</li>
-                <li>ouatdjibril@gmail.com</li>
-              </ul>
-            </div>
+  <!-- ============================================ -->
+  <!-- Mes Services                                  -->
+  <!-- ============================================ -->
+  <section id="experience" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="experience-heading">Mes Services</h2>
+        <p>Des solutions concrètes en développement, IA, données et automatisation pour accompagner votre organisation.</p>
       </div>
-    </section><!-- End Resume Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Galeries Photos</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Tous</li>
-              <li data-filter=".filter-app">ADW &amp; CGECI</li>
-              
-              <li data-filter=".filter-web">AUF</li>
-              <li data-filter=".filter-card">Nourriture</li>
-            </ul>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-code-slash"></i></div>
+            <h4>Développement Web</h4>
+            <p>Création de sites web modernes et performants, refont de pages et solutions sur mesure avec des technologies récentes.</p>
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>ADW 1</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-phone"></i></div>
+            <h4>Développement Mobile</h4>
+            <p>Applications mobiles performantes pour iOS et Android avec des interfaces simples, rapides et orientées utilisateur.</p>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>AUF 3</h4>
-                
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>CGECI</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Aloco</h4>
-                
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>AUF 1</h4>
-                
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>ADW 2</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>APF</h4>
-                
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Crudité</h4>
-                
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>AUF 3</h4>
-                
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
 
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-database"></i></div>
+            <h4>Gestion de Base de Données</h4>
+            <p>Conception, modélisation et gestion de bases de données pour optimiser la performance et la fiabilité des systèmes.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-laptop"></i></div>
+            <h4>Développement Logiciel Bureau</h4>
+            <p>Création de logiciels de gestion et d'automatisation fonctionnant sur Windows, Linux et macOS selon vos besoins.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-envelope-paper"></i></div>
+            <h4>Emailing Pro</h4>
+            <p>Conception de templates e-mails HTML responsives et professionnels pour des communications efficaces et fiables.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-robot"></i></div>
+            <h4>Automatisation</h4>
+            <p>Développement de scripts et solutions d'automatisation pour gagner du temps, réduire les tâches répétitives et améliorer la productivité.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h4>Modélisation &amp; Simulation</h4>
+            <p>Modélisation mathématique, résolution de problèmes complexes et simulation numérique orientée décision et analyse.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-server"></i></div>
+            <h4>Développement Backend</h4>
+            <p>Création d'API REST, backend robuste et microservices pour soutenir des applications front-end performantes.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-window-stack"></i></div>
+            <h4>Design UI/UX</h4>
+            <p>Conception d'interfaces utilisateur intuitives, ergonomiques et esthétiques pour améliorer l'expérience digitale.</p>
+          </div>
+        </div>
       </div>
-    </section><!-- End Portfolio Section -->
+    </div>
+  </section>
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Témoignages</h2>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Koné Kevin</h3>
-                <h4>Apprenant Simplon</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  J'ai travaillé avec Mr Kablam sur une veille sur OpenCV. J'ai beaucoup d'admiration pour lui et pour son douvement dans le travail
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Aristide Dembélé</h3>
-                <h4>Apprenant Simplon</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                 J'ai travaillé avec Mr Kablam sur le projet SafeCity. Il est très professionnel et collaboratif.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Laurianne Koffi</h3>
-                <h4>Developpeuse Data IA</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Les qualités de Mr Kablam sont: rigeur, professionnalisme et dévotion dans son travail.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Charlie</h3>
-                <h4>Developpeur Full-Stack</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Expert dans son domaine, Mr Kablam fait preuve d'une patience exceptionnelle.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>Mexiale Fenkeu</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Mr Kablam est professionnel dans son travail.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
+  <!-- ============================================ -->
+  <!-- Témoignages                                  -->
+  <!-- ============================================ -->
+  <section id="testimonials" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="testimonials-heading">Témoignages</h2>
+        <p>Le retour de personnes et de partenaires avec lesquels j'ai eu le plaisir de collaborer.</p>
       </div>
-    </section><!-- End Testimonials Section -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+      <!-- Testimonials Carousel -->
+      <div id="testimonials-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-1.jpg" alt="Collaborateur 1">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Très à l'écoute, rigoureux dans l'exécution et très professionnel dans la gestion des tâches. Il apporte une vraie valeur ajoutée sur les projets techniques.</p>
+              <h4>Partenaire de projet</h4>
+              <span>Collaboration technique</span>
+            </div>
+          </div>
 
-        <div class="section-title">
-          <h2>Contact</h2>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-2.jpg" alt="Collaborateur 2">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Le niveau de créativité et de logique de solution est impressionnant. Il sait transformer des besoins concrets en outils simples et efficaces.</p>
+              <h4>Client / Collaborateur</h4>
+              <span>Solutions digitales</span>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-3.jpg" alt="Collaborateur 3">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Une excellente capacité à allier pédagogie, innovation et exécution. Très clair dans la communication et très fiable sur les livrables.</p>
+              <h4>Équipe projet</h4>
+              <span>Accompagnement &amp; développement</span>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-4.jpg" alt="Collaborateur 4">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Capacité remarquable à analyser les problèmes complexes et proposer des solutions innovantes. Un véritable atout pour toute équipe.</p>
+              <h4>Manager / Superviseur</h4>
+              <span>Gestion de projets innovants</span>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-5.jpg" alt="Collaborateur 5">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Sa maîtrise des technologies et son approche pédagogique rendent les sujets complexes accessibles. Excellent mentor et développeur.</p>
+              <h4>Collègue / Mentor</h4>
+              <span>Formation &amp; expertise technique</span>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-6.jpg" alt="Collaborateur 6">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Passionné par son travail et animé par le souci du détail. Il livre des projets de qualité supérieure dans les délais impartis.</p>
+              <h4>Client satisfaction</h4>
+              <span>Projets web &amp; mobile</span>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-7.jpg" alt="Collaborateur 7">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Un professionnel qui allie rigueur scientifique et pragmatisme entrepreneurial. Parfait pour transformer les données en décisions.</p>
+              <h4>Partenaire stratégique</h4>
+              <span>Data &amp; Intelligence Artificielle</span>
+            </div>
+          </div>
+
+          <!-- Slide 8 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-8.jpg" alt="Collaborateur 8">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Rare de rencontrer quelqu'un qui combine expertise technique, leadership et humanité. Une personne de confiance pour des projets critiques.</p>
+              <h4>Directeur / Chef de projet</h4>
+              <span>Transformation digitale</span>
+            </div>
+          </div>
         </div>
 
-        <div class="row mt-1">
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
 
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Localisation:</h4>
-                <p>Cocody, CIDFOR derrière le Lycée Technique d'Abidjan</p>
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="5"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="6"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="7"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+
+  <!-- ============================================ -->                                    -->
+  <!-- ============================================ -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="portfolio-heading">Portfolio de Projets</h2>
+        <p>Une sélection des projets les plus significatifs développés sur GitHub et en environnement réel.</p>
+      </div>
+
+      <!-- Filters -->
+      <ul class="portfolio-filters" id="portfolio-filters">
+        <li data-filter="*" class="filter-active">Tous les projets</li>
+        <li data-filter=".filter-ia">IA &amp; Vision</li>
+        <li data-filter=".filter-web">Web &amp; App</li>
+        <li data-filter=".filter-data">Data &amp; ML</li>
+      </ul>
+
+      <div class="row g-4 portfolio-container">
+        <div class="col-md-6 col-lg-4 portfolio-item filter-data">
+          <div class="portfolio-card" id="project-card-1">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/poisson.png" class="portfolio-img" alt="poissonnerie_pro_app">
+            </div>
+            <div class="portfolio-body">
+              <h4>poissonnerie_pro_app</h4>
+              <p>Application de gestion commerciale pour une poissonnerie avec ERP, suivi des stocks, commandes et gestion de ventes.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Python</span>
+                <span class="portfolio-tag">Django</span>
+                <span class="portfolio-tag">ERP</span>
               </div>
+              <a href="https://github.com/bkablam11/poissonnerie_pro_app" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
 
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>bkablam11@gmail.com</p>
+        <div class="col-md-6 col-lg-4 portfolio-item filter-ia">
+          <div class="portfolio-card" id="project-card-2">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/car.png" class="portfolio-img" alt="car-tracking">
+            </div>
+            <div class="portfolio-body">
+              <h4>car-tracking</h4>
+              <p>Projet de détection et suivi d'objets avec YOLO11 + ByteTrack pour la surveillance intelligente et le comptage.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">OpenCV</span>
+                <span class="portfolio-tag">YOLO</span>
+                <span class="portfolio-tag">Tracking</span>
               </div>
+              <a href="https://github.com/bkablam11/car-tracking" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
 
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Téléphone:</h4>
+        <div class="col-md-6 col-lg-4 portfolio-item filter-data">
+          <div class="portfolio-card" id="project-card-3">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/machinelearnia.png" class="portfolio-img" alt="Projet_MachineLearning_Guillaume">
+            </div>
+            <div class="portfolio-body">
+              <h4>Projet_MachineLearning_Guillaume</h4>
+              <p>Projet de machine learning orienté modélisation prédictive, analyse et optimisation de données structurées.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">ML</span>
+                <span class="portfolio-tag">Python</span>
+                <span class="portfolio-tag">Scikit-Learn</span>
+              </div>
+              <a href="https://github.com/bkablam11/Projet_MachineLearning_Guillaume" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+          <div class="portfolio-card" id="project-card-4">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/print.png" class="portfolio-img" alt="PrintPay_app">
+            </div>
+            <div class="portfolio-body">
+              <h4>PrintPay_app</h4>
+              <p>Application mobile permettant de suivre les coûts d'impression pour enseignants et simplifier la gestion de dépenses.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Flutter</span>
+                <span class="portfolio-tag">Mobile</span>
+                <span class="portfolio-tag">Productivité</span>
+              </div>
+              <a href="https://github.com/bkablam11/PrintPay_app" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+          <div class="portfolio-card" id="project-card-5">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/gaming.png" class="portfolio-img" alt="gaming-site">
+            </div>
+            <div class="portfolio-body">
+              <h4>gaming-site</h4>
+              <p>Plateforme web de gestion de jeux vidéo avec interface utilisateur, logique métier et expérience visuelle orientée gaming.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">PHP</span>
+                <span class="portfolio-tag">JavaScript</span>
+                <span class="portfolio-tag">CSS</span>
+              </div>
+              <a href="https://github.com/bkablam11/gaming-site" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+          <div class="portfolio-card" id="project-card-6">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/wari.png" class="portfolio-img" alt="tontineApp">
+            </div>
+            <div class="portfolio-body">
+              <h4>tontineApp</h4>
+              <p>Application de tontine avec gestion de contributions, suivi des cotisations et logique de gestion collaborative.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">App</span>
+                <span class="portfolio-tag">Finance</span>
+                <span class="portfolio-tag">Gestion</span>
+              </div>
+              <a href="https://github.com/bkablam11/tontineApp" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+          <div class="portfolio-card" id="project-card-7">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/wari.png" class="portfolio-img" alt="botVote">
+            </div>
+            <div class="portfolio-body">
+              <h4>botVote</h4>
+              <p>Projet d'automatisation autour des votes, de la gestion d'interaction et de la logique de traitement rapide.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Automation</span>
+                <span class="portfolio-tag">Python</span>
+                <span class="portfolio-tag">Scripts</span>
+              </div>
+              <a href="https://github.com/bkablam11/botVote" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+          <div class="portfolio-card" id="project-card-8">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/wari.png" class="portfolio-img" alt="SmartCal-App">
+            </div>
+            <div class="portfolio-body">
+              <h4>SmartCal-App</h4>
+              <p>Application de calcul intelligent et de simulation de moyennes pour aider à la planification académique.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Algorithmique</span>
+                <span class="portfolio-tag">Calcul</span>
+                <span class="portfolio-tag">Education</span>
+              </div>
+              <a href="https://github.com/bkablam11/SmartCal-App" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+          <div class="portfolio-card" id="project-card-9">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/wari.png" class="portfolio-img" alt="duel_links_farming_bot">
+            </div>
+            <div class="portfolio-body">
+              <h4>duel_links_farming_bot</h4>
+              <p>Bot d'automatisation orienté gestion de liens et tâches répétitives, idéal pour le farming d'activités de routine.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Automation</span>
+                <span class="portfolio-tag">Python</span>
+                <span class="portfolio-tag">Bot</span>
+              </div>
+              <a href="https://github.com/bkablam11/duel_links_farming_bot" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- Contact                                      -->
+  <!-- ============================================ -->
+  <section id="contact" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="contact-heading">Contactez-Moi</h2>
+        <p>Un projet en vue ou une opportunité de collaboration ? N'hésitez pas à me transmettre un message.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="contact-info-card">
+            <h4 class="fw-bold mb-4">Mes Coordonnées</h4>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-person-circle"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Nom complet</h5>
+                <p>Kablam Edjabrou Ulrich Blanchard</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Téléphone direct</h5>
                 <p>+225 07 48 78 22 05</p>
               </div>
-
             </div>
 
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>WhatsApp</h5>
+                <p>+225 07 77 51 86 95</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-envelope-open"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Email</h5>
+                <p>bkablam11@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-map"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Localisation</h5>
+                <p>Abobo Akeikoi, Abidjan, Côte d'Ivoire</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-github"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>GitHub</h5>
+                <p><a href="https://github.com/bkablam11" target="_blank" rel="noopener">/bkablam11</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-linkedin"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>LinkedIn</h5>
+                <p><a href="https://linkedin.com/in/blanchard-kablam" target="_blank" rel="noopener">/blanchard-kablam</a></p>
+              </div>
+            </div>
           </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Merci votre message à été envoyé</div>
-              </div>
-              <div class="text-center"><button type="submit">Envoyer</button></div>
-            </form>
-
-          </div>
-
         </div>
 
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Blanchard Kablam</h3>
-      <div class="social-links">
-        <a href="https://twitter.com/bkablam10" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://web.facebook.com/edjabrouulrichblanchard.kablam" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/bkablam10/?hl=fr" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://github.com/bkablam11/" class="google-plus"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/edjabrou-ulrich-blanchard-kablam-872b3a195/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Blanchard kablam</span></strong>
+        <div class="col-lg-7">
+          <form class="contact-form" action="#" method="post" id="contact-form-element">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label fw-semibold">Votre Nom</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Ex: Jean Dupont" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label fw-semibold">Votre Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Ex: jean.dupont@example.com" required>
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label fw-semibold">Sujet</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Ex: Opportunité Data Scientist / IA" required>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label fw-semibold">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Décrivez votre besoin ou opportunité..." required></textarea>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-primary rounded-pill px-4 py-2 fw-bold" id="btn-submit-contact">
+                  <i class="bi bi-send-fill me-2"></i> Envoyer le message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </section>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- ============================================ -->
+  <!-- Footer                                       -->
+  <!-- ============================================ -->
+  <footer>
+    <div class="container text-center">
+      <h3 class="text-white fw-bold mb-2">Kablam Edjabrou Ulrich Blanchard</h3>
+      <p class="text-muted small mb-4">Professeur de Collège (ENS) &bull; Développeur en Intelligence Artificielle &bull; Data Scientist &bull; Formateur en Robotique</p>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+      <div class="social-links mb-4">
+        <a href="https://github.com/bkablam11" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="mailto:bkablam11@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+        <a href="https://linkedin.com/in/blanchard-kablam" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://wa.me/2250777518695" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
 
-  <!-- Template Main JS File -->
+      <p class="mb-0 text-muted small">&copy; 2026 Kablam Edjabrou Ulrich Blanchard. Hébergé sur GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <a href="#" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up-short fs-4"></i></a>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Main JS -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
