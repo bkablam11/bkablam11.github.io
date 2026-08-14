@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edjabrou Ulrich Blanchard KABLAM - Portfolio Data &amp; IA</title>
+  <title>Edjabrou Ulrich Blanchard KABLAM - Portfolio Data &amp; AI</title>
   <meta name="description" content="Portfolio de Kablam Edjabrou Ulrich Blanchard - Professeur de Collège (ENS) & Développeur en Intelligence Artificielle.">
 
   <!-- Bootstrap 5 CSS -->
@@ -33,27 +33,89 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-menu navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-menu navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <!-- Accueil / Home -->
           <li class="nav-item">
-            <a class="nav-link active" href="#hero" id="nav-link-hero">Accueil</a>
+            <a class="nav-link active" href="#hero" id="nav-link-hero">
+              <span class="nav-text-en">Home</span>
+              <span class="nav-text-fr" style="display: none;">Accueil</span>
+            </a>
           </li>
+
+          <!-- À Propos / About -->
           <li class="nav-item">
-            <a class="nav-link" href="#about" id="nav-link-about">À Propos</a>
+            <a class="nav-link" href="#about" id="nav-link-about">
+              <span class="nav-text-en">About</span>
+              <span class="nav-text-fr" style="display: none;">À Propos</span>
+            </a>
           </li>
+
+          <!-- Chiffres Clés / Impact -->
           <li class="nav-item">
-            <a class="nav-link" href="#skills" id="nav-link-skills">Compétences</a>
+            <a class="nav-link" href="#impact" id="nav-link-impact">
+              <span class="nav-text-en">Impact</span>
+              <span class="nav-text-fr" style="display: none;">Chiffres Clés</span>
+            </a>
           </li>
+
+          <!-- Compétences / Skills -->
           <li class="nav-item">
-            <a class="nav-link" href="#experience" id="nav-link-experience">Parcours</a>
+            <a class="nav-link" href="#skills" id="nav-link-skills">
+              <span class="nav-text-en">Skills</span>
+              <span class="nav-text-fr" style="display: none;">Compétences</span>
+            </a>
           </li>
+
+          <!-- Services -->
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio" id="nav-link-portfolio">Portfolio</a>
+            <a class="nav-link" href="#services" id="nav-link-services">
+              <span class="nav-text-en">Services</span>
+              <span class="nav-text-fr" style="display: none;">Services</span>
+            </a>
           </li>
+
+          <!-- Portfolio -->
           <li class="nav-item">
-            <a class="nav-link" href="#testimonials" id="nav-link-testimonials">Témoignages</a>
+            <a class="nav-link" href="#portfolio" id="nav-link-portfolio">
+              <span class="nav-text-en">Portfolio</span>
+              <span class="nav-text-fr" style="display: none;">Portfolio</span>
+            </a>
           </li>
+
+          <!-- Témoignages / Testimonials -->
           <li class="nav-item">
-            <a class="nav-link" href="#contact" id="nav-link-contact">Contact</a>
+            <a class="nav-link" href="#testimonials" id="nav-link-testimonials">
+              <span class="nav-text-en">Testimonials</span>
+              <span class="nav-text-fr" style="display: none;">Témoignages</span>
+            </a>
+          </li>
+
+          <!-- Contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" id="nav-link-contact">
+              <span class="nav-text-en">Contact</span>
+              <span class="nav-text-fr" style="display: none;">Contact</span>
+            </a>
+          </li>
+
+          <!-- Sélecteur de Langue -->
+          <li class="nav-item dropdown ms-lg-2 mt-2 mt-lg-0">
+            <button class="btn btn-sm btn-custom-outline dropdown-toggle rounded-pill px-3 py-1 d-inline-flex align-items-center gap-1" type="button" id="navbarLangDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe"></i>
+              <span id="current-lang-text">English (EN)</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow" aria-labelledby="navbarLangDropdown">
+              <li>
+                <a class="dropdown-item d-flex align-items-center gap-2 lang-select-btn" href="#" data-set-lang="en">
+                  <span>🇺🇸</span> English (EN)
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center gap-2 lang-select-btn" href="#" data-set-lang="fr">
+                  <span>🇫🇷</span> Français (FR)
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -63,38 +125,85 @@
   <!-- ============================================ -->
   <!-- Hero Section                                 -->
   <!-- ============================================ -->
-  <section id="hero">
+  <section id="hero" class="d-flex align-items-center">
     <div class="container">
-      <div class="row align-items-center g-5">
+
+      <!-- ================= ANGLAIS (Par défaut) ================= -->
+      <div data-lang="en" class="row align-items-center g-5">
+        <!-- Colonne Texte Gauche -->
         <div class="col-lg-7 text-center text-lg-start">
-          <span class="hero-badge" id="hero-badge">
-            <i class="bi bi-stars me-1"></i> Professeur de Collège (ENS) &amp; Développeur en Intelligence Artificielle
+          <span class="hero-badge" id="hero-badge-en">
+            <i class="bi bi-stars me-1"></i> AI Engineer | Python &amp; ML Specialist | ENS Teacher
           </span>
-          <h1 id="hero-title">
+          
+          <h1 id="hero-title-en">
             Edjabrou Ulrich Blanchard <br><span>KABLAM</span>
           </h1>
-          <div class="typed-text-wrapper" id="hero-subtitle">
-            Je suis <span class="typed-text"></span>
+          
+          <div class="typed-text-wrapper mb-3" id="hero-subtitle-en">
+            I am <span class="typed-text typed-text-en"></span>
           </div>
-          <p class="lead text-light opacity-75 mb-4 max-w-xl" id="hero-description">
-            Professeur de mathématiques, passionné par l'innovation pédagogique et le développement d'applications intelligentes, avec une expertise en IA, Data Science, automatisation, vision par ordinateur et solutions web.
+          
+          <p class="lead text-light opacity-75 mb-4 max-w-xl" id="hero-description-en">
+            Mathematics professor passionate about educational innovation, robotics, and intelligent software engineering, with strong expertise in AI, Data Science, computer vision, and high-impact digital solutions.
           </p>
-          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start" id="hero-cta">
+          
+          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start" id="hero-cta-en">
             <a href="#portfolio" class="btn btn-custom-primary">
-              <i class="bi bi-grid-fill"></i> Explorer mes projets
+              <i class="bi bi-grid-fill me-2"></i>Explore my projects
             </a>
             <a href="#contact" class="btn btn-custom-outline">
-              <i class="bi bi-envelope-fill"></i> Me contacter
+              <i class="bi bi-envelope-fill me-2"></i>Contact me
             </a>
           </div>
         </div>
 
+        <!-- Colonne Photo Droite -->
         <div class="col-lg-5 text-center">
-          <div class="hero-img-container" id="hero-image-wrapper">
-            <img src="assets/img/me/profile-img.png" alt="Edjabrou Ulrich Blanchard KABLAM" class="hero-img img-fluid" id="profile-image">
+          <div class="hero-img-container" id="hero-image-wrapper-en">
+            <img src="assets/img/me/profile-img.png" alt="Edjabrou Ulrich Blanchard KABLAM" class="hero-img img-fluid">
           </div>
         </div>
       </div>
+
+      <!-- ================= FRANÇAIS ================= -->
+      <div data-lang="fr" class="row align-items-center g-5" style="display: none;">
+        <!-- Colonne Texte Gauche -->
+        <div class="col-lg-7 text-center text-lg-start">
+          <span class="hero-badge" id="hero-badge-fr">
+            <i class="bi bi-stars me-1"></i> Ingénieur IA | Spécialiste Python &amp; ML | Professeur ENS
+          </span>
+          
+          <h1 id="hero-title-fr">
+            Edjabrou Ulrich Blanchard <br><span>KABLAM</span>
+          </h1>
+          
+          <div class="typed-text-wrapper mb-3" id="hero-subtitle-fr">
+            Je suis <span class="typed-text typed-text-fr"></span>
+          </div>
+          
+          <p class="lead text-light opacity-75 mb-4 max-w-xl" id="hero-description-fr">
+            Professeur de mathématiques, passionné par l'innovation pédagogique, la robotique et le développement d'applications intelligentes, avec une expertise solide en IA, Data Science, vision par ordinateur et solutions web.
+          </p>
+          
+          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start" id="hero-cta-fr">
+            <a href="#portfolio" class="btn btn-custom-primary">
+              <i class="bi bi-grid-fill me-2"></i>Explorer mes projets
+            </a>
+            <a href="#contact" class="btn btn-custom-outline">
+              <i class="bi bi-envelope-fill me-2"></i>Me contacter
+            </a>
+          </div>
+        </div>
+
+        <!-- Colonne Photo Droite -->
+        <div class="col-lg-5 text-center">
+          <div class="hero-img-container" id="hero-image-wrapper-fr">
+            <img src="assets/img/me/profile-img.png" alt="Edjabrou Ulrich Blanchard KABLAM" class="hero-img img-fluid">
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -104,70 +213,36 @@
   <section id="about" class="section-bg">
     <div class="container">
       <div class="section-title">
-        <h2 id="about-heading">À Propos de moi</h2>
-        <p>Découvrez mon profil, ma passion pour les données et ma vision technologique.</p>
+        <div data-lang="en">
+          <h2 id="about-heading-en">About Me</h2>
+          <p>Discover my background, passion for data, educational innovation, and technology.</p>
+        </div>
+        <div data-lang="fr" style="display: none;">
+          <h2 id="about-heading-fr">À Propos de moi</h2>
+          <p>Découvrez mon profil, ma passion pour les données et ma vision technologique.</p>
+        </div>
       </div>
 
       <div class="row g-4 align-items-center">
         <div class="col-lg-7">
           <div class="about-card">
-            <h3 class="fw-bold mb-3" id="about-subheading">Professeur de Collège (ENS) &amp; Développeur en Intelligence Artificielle</h3>
-            <p class="text-secondary mb-4">
-              Je suis Kablam Edjabrou Ulrich Blanchard, enseignant de mathématiques et développeur IA passionné par l'innovation pédagogique, l'automatisation et la transformation numérique. Mon parcours associe l'enseignement, la recherche mathématique et la création de solutions intelligentes concrètes.
-            </p>
-            <p class="text-secondary mb-4">
-              J'interviens sur des projets d'automatisation, d'analyse de données, de vision par ordinateur, de reconnaissance vocale et de développement web, avec un souci constant d'appliquer la technologie à des problèmes réels et utiles.
-            </p>
-
-            <div class="row g-3">
-              <div class="col-sm-6">
-                <div class="about-info-item">
-                  <i class="bi bi-person-fill"></i>
-                  <div><strong>Nom complet :</strong> Kablam Edjabrou Ulrich Blanchard</div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="about-info-item">
-                  <i class="bi bi-telephone-fill"></i>
-                  <div><strong>Téléphone :</strong> +225 07 48 78 22 05</div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="about-info-item">
-                  <i class="bi bi-whatsapp"></i>
-                  <div><strong>WhatsApp :</strong> +225 07 77 51 86 95</div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="about-info-item">
-                  <i class="bi bi-envelope-fill"></i>
-                  <div><strong>Email :</strong> bkablam11@gmail.com</div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="about-info-item">
-                  <i class="bi bi-geo-alt-fill"></i>
-                  <div><strong>Localisation :</strong> Abobo Akeikoi, Abidjan, Côte d'Ivoire</div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="about-info-item">
-                  <i class="bi bi-github"></i>
-                  <div><strong>GitHub :</strong> <a href="https://github.com/bkablam11" target="_blank" rel="noopener">/bkablam11</a></div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="about-info-item">
-                  <i class="bi bi-linkedin"></i>
-                  <div><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/edjabrou-ulrich-blanchard-kablam-872b3a195/" target="_blank" rel="noopener">/blanchard-kablam</a></div>
-                </div>
-              </div>
+            <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm mb-4">
+              <iframe 
+                src="https://www.youtube.com/embed/5veQlZEFJ-w?autoplay=1&mute=1&loop=1&playlist=5veQlZEFJ-w&start=3146" 
+                title="Video Presentation" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
             </div>
-
-            <div class="mt-4 pt-2">
-              <a href="#contact" class="btn btn-primary rounded-pill px-4 me-2">
-                <i class="bi bi-chat-dots-fill me-1"></i> Discutons de vos projets
-              </a>
+            <div data-lang="en">
+              <p class="text-secondary mb-0">
+                Teacher and AI developer connecting theoretical mathematics with hands-on software development to create robust, useful applications for education, robotics competitions, and business growth.
+              </p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <p class="text-secondary mb-0">
+                Enseignant et développeur en intelligence artificielle associant la rigueur des mathématiques pures à l'ingénierie logicielle pour concevoir des solutions performantes, des programmes de formation en robotique et des outils concrets.
+              </p>
             </div>
           </div>
         </div>
@@ -175,33 +250,108 @@
         <div class="col-lg-5">
           <div class="about-photo-panel">
             <div class="about-photo-main">
-              <img src="assets/img/me/wac.jpg" alt="Kablam lors d'un atelier ou projet collaboratif">
+              <img src="assets/img/me/wac.jpg" alt="Kablam during a workshop or project" loading="lazy">
             </div>
             <div class="about-photo-stack">
               <div class="about-photo-small">
-                <img src="assets/img/me/cnr.jpg" alt="Kablam lors d'un événement africain digital">
+                <img src="assets/img/me/cnr.jpg" alt="Kablam at African digital event" loading="lazy">
               </div>
               <div class="about-photo-small">
-                <img src="assets/img/me/cnr2.jpg" alt="Kablam en contexte festif professionnel">
+                <img src="assets/img/me/cnr2.jpg" alt="Kablam during ceremony" loading="lazy">
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="row g-3 mt-3">
-            <div class="col-6">
-              <div class="stat-box" id="stat-projects">
-                <h3>50+</h3>
-                <p>Projets Data &amp; IA</p>
-              </div>
+  <!-- ============================================ -->
+  <!-- Chiffres Clés / Impact & Formations          -->
+  <!-- ============================================ -->
+  <section id="impact" class="impact-section">
+    <div class="container">
+      <div class="section-title">
+        <div data-lang="en">
+          <h2 class="text-white" id="impact-heading-en">Key Figures &amp; Impact</h2>
+          <p class="text-light opacity-75">Tangible results in training, education, robotics competitions, and AI engineering.</p>
+        </div>
+        <div data-lang="fr" style="display: none;">
+          <h2 class="text-white" id="impact-heading-fr">Chiffres Clés &amp; Impact</h2>
+          <p class="text-light opacity-75">Des résultats concrets en formation, éducation, compétitions de robotique et projets d'IA.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Stat 1: Élèves formés / présents -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="impact-card stat-box" id="stat-students">
+            <div class="impact-icon-circle bg-emerald">
+              <i class="bi bi-mortarboard-fill"></i>
             </div>
-            <div class="col-6">
-              <div class="stat-box" id="stat-experience">
-                <h3>7+</h3>
-                <p>Années d'Expérience</p>
-              </div>
+            <h3 class="stat-count">500+</h3>
+            <p data-lang="en">Students Trained</p>
+            <p data-lang="fr" style="display: none;">Élèves Formés</p>
+          </div>
+        </div>
+
+        <!-- Stat 2: Jeunes filles initiées -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="impact-card stat-box" id="stat-girls">
+            <div class="impact-icon-circle bg-teal">
+              <i class="bi bi-gender-female"></i>
             </div>
-          
-            
+            <h3 class="stat-count">115+</h3>
+            <p data-lang="en">Young Girls Trained</p>
+            <p data-lang="fr" style="display: none;">Jeunes Filles</p>
+          </div>
+        </div>
+
+        <!-- Stat 3: Enseignants formés -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="impact-card stat-box" id="stat-teachers">
+            <div class="impact-icon-circle bg-amber">
+              <i class="bi bi-person-workspace"></i>
+            </div>
+            <h3 class="stat-count">150+</h3>
+            <p data-lang="en">Teachers Trained</p>
+            <p data-lang="fr" style="display: none;">Enseignants Formés</p>
+          </div>
+        </div>
+
+        <!-- Stat 4: Sessions / Ateliers organisés -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="impact-card stat-box" id="stat-sessions">
+            <div class="impact-icon-circle bg-orange">
+              <i class="bi bi-calendar2-check-fill"></i>
+            </div>
+            <h3 class="stat-count">25+</h3>
+            <p data-lang="en">Training Workshops</p>
+            <p data-lang="fr" style="display: none;">Sessions &amp; Ateliers</p>
+          </div>
+        </div>
+
+        <!-- Stat 5: Projets Data & IA -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="impact-card stat-box" id="stat-projects">
+            <div class="impact-icon-circle bg-blue">
+              <i class="bi bi-cpu-fill"></i>
+            </div>
+            <h3 class="stat-count">50+</h3>
+            <p data-lang="en">Data &amp; AI Projects</p>
+            <p data-lang="fr" style="display: none;">Projets Data &amp; IA</p>
+          </div>
+        </div>
+
+        <!-- Stat 6: Années d'Expérience -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="impact-card stat-box" id="stat-experience">
+            <div class="impact-icon-circle bg-indigo">
+              <i class="bi bi-award-fill"></i>
+            </div>
+            <h3 class="stat-count">7+</h3>
+            <p data-lang="en">Years of Experience</p>
+            <p data-lang="fr" style="display: none;">Années d'Expérience</p>
           </div>
         </div>
       </div>
@@ -214,8 +364,14 @@
   <section id="skills">
     <div class="container">
       <div class="section-title">
-        <h2 id="skills-heading">Compétences Techniques</h2>
-        <p>Un ensemble de compétences multidisciplinaires couvrant l'ensemble du cycle de vie des données.</p>
+        <div data-lang="en">
+          <h2 id="skills-heading-en">Technical Skills</h2>
+          <p>A multidisciplinary skill set covering the entire data lifecycle, AI, and software engineering.</p>
+        </div>
+        <div data-lang="fr" style="display: none;">
+          <h2 id="skills-heading-fr">Compétences Techniques</h2>
+          <p>Un ensemble de compétences multidisciplinaires couvrant l'ensemble du cycle de vie des données.</p>
+        </div>
       </div>
 
       <div class="row g-4">
@@ -225,8 +381,14 @@
             <div class="skill-icon">
               <i class="bi bi-cpu"></i>
             </div>
-            <h4>Langages &amp; Frameworks</h4>
-            <p class="text-muted small mb-3">Python, R, Bash, PHP, JavaScript, Dart, Flutter, Flask, Django, OpenCV, SpeechRecognition, LaTeX, HTML/CSS, MySQL, PostgreSQL.</p>
+            <div data-lang="en">
+              <h4>Languages &amp; Frameworks</h4>
+              <p class="text-muted small mb-3">Python, R, Bash, PHP, JavaScript, Dart, Flutter, Flask, Django, OpenCV, SpeechRecognition, LaTeX, HTML/CSS, MySQL, PostgreSQL.</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Langages &amp; Frameworks</h4>
+              <p class="text-muted small mb-3">Python, R, Bash, PHP, JavaScript, Dart, Flutter, Flask, Django, OpenCV, SpeechRecognition, LaTeX, HTML/CSS, MySQL, PostgreSQL.</p>
+            </div>
             <div>
               <span class="skill-tag">Python</span>
               <span class="skill-tag">R</span>
@@ -252,15 +414,21 @@
             <div class="skill-icon">
               <i class="bi bi-diagram-3"></i>
             </div>
-            <h4>Data Science &amp; IA</h4>
-            <p class="text-muted small mb-3">Analyse de données, Big Data, projets Data Science, automatisation intelligente et solutions basées sur l'IA.</p>
+            <div data-lang="en">
+              <h4>Data Science &amp; AI</h4>
+              <p class="text-muted small mb-3">Data analysis, Big Data, Data Science projects, intelligent automation, and AI-based solutions.</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Data Science &amp; IA</h4>
+              <p class="text-muted small mb-3">Analyse de données, Big Data, projets Data Science, automatisation intelligente et solutions basées sur l'IA.</p>
+            </div>
             <div>
               <span class="skill-tag">Data Science</span>
               <span class="skill-tag">Big Data</span>
               <span class="skill-tag">Machine Learning</span>
-              <span class="skill-tag">IA</span>
-              <span class="skill-tag">Vision par ordinateur</span>
-              <span class="skill-tag">Reconnaissance vocale</span>
+              <span class="skill-tag">AI</span>
+              <span class="skill-tag">Computer Vision</span>
+              <span class="skill-tag">Speech Recognition</span>
             </div>
           </div>
         </div>
@@ -271,8 +439,14 @@
             <div class="skill-icon">
               <i class="bi bi-bar-chart-line"></i>
             </div>
-            <h4>Outils &amp; Systèmes</h4>
-            <p class="text-muted small mb-3">Utilisation professionnelle des systèmes et outils de travail collaboratif, analyse et production.</p>
+            <div data-lang="en">
+              <h4>Tools &amp; Systems</h4>
+              <p class="text-muted small mb-3">Professional use of collaborative work systems and tools, data analysis, and software production.</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Outils &amp; Systèmes</h4>
+              <p class="text-muted small mb-3">Utilisation professionnelle des systèmes et outils de travail collaboratif, analyse et production.</p>
+            </div>
             <div>
               <span class="skill-tag">Linux</span>
               <span class="skill-tag">Windows</span>
@@ -293,12 +467,18 @@
             <div class="skill-icon">
               <i class="bi bi-cloud-check"></i>
             </div>
-            <h4>Projets &amp; Innovation</h4>
-            <p class="text-muted small mb-3">Développement d'outils concrets, applications utiles et solutions intelligentes orientées pédagogie et productivité.</p>
+            <div data-lang="en">
+              <h4>Projects &amp; Innovation</h4>
+              <p class="text-muted small mb-3">Development of concrete tools, useful applications, and intelligent solutions oriented towards education and productivity.</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Projets &amp; Innovation</h4>
+              <p class="text-muted small mb-3">Développement d'outils concrets, applications utiles et solutions intelligentes orientées pédagogie et productivité.</p>
+            </div>
             <div>
               <span class="skill-tag">PrintPay</span>
-              <span class="skill-tag">Émargement IA</span>
-              <span class="skill-tag">Moyenne</span>
+              <span class="skill-tag">IA Grading</span>
+              <span class="skill-tag">Average</span>
               <span class="skill-tag">Gaming Site</span>
             </div>
           </div>
@@ -310,83 +490,443 @@
   <!-- ============================================ -->
   <!-- Mes Services                                  -->
   <!-- ============================================ -->
-  <section id="experience" class="section-bg">
+  <section id="services" class="section-bg">
     <div class="container">
       <div class="section-title">
-        <h2 id="experience-heading">Mes Services</h2>
-        <p>Des solutions concrètes en développement, IA, données et automatisation pour accompagner votre organisation.</p>
+        <div data-lang="en">
+          <h2 id="services-heading-en">My Services</h2>
+          <p>Practical solutions in development, AI, data, and automation to support your organization.</p>
+        </div>
+        <div data-lang="fr" style="display: none;">
+          <h2 id="services-heading-fr">Mes Services</h2>
+          <p>Des solutions concrètes en développement, IA, données et automatisation pour accompagner votre organisation.</p>
+        </div>
       </div>
 
       <div class="row g-4">
+        <!-- Service 1 -->
         <div class="col-md-6 col-lg-4">
           <div class="service-card">
             <div class="service-icon"><i class="bi bi-code-slash"></i></div>
-            <h4>Développement Web</h4>
-            <p>Création de sites web modernes et performants, refont de pages et solutions sur mesure avec des technologies récentes.</p>
+            <div data-lang="en">
+              <h4>Web Development</h4>
+              <p>Creation of modern, responsive websites and full-stack web applications using cutting-edge technologies.</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Développement Web</h4>
+              <p>Création de sites web modernes et performants, refonte de pages et solutions sur mesure avec des technologies récentes.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Service 2 -->
         <div class="col-md-6 col-lg-4">
           <div class="service-card">
             <div class="service-icon"><i class="bi bi-phone"></i></div>
-            <h4>Développement Mobile</h4>
-            <p>Applications mobiles performantes pour iOS et Android avec des interfaces simples, rapides et orientées utilisateur.</p>
+            <div data-lang="en">
+              <h4>Mobile Development</h4>
+              <p>High-performance mobile applications for iOS and Android with simple, fast, and user-oriented interfaces (Flutter).</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Développement Mobile</h4>
+              <p>Applications mobiles performantes pour iOS et Android avec des interfaces simples, rapides et orientées utilisateur.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Service 3 -->
         <div class="col-md-6 col-lg-4">
           <div class="service-card">
             <div class="service-icon"><i class="bi bi-database"></i></div>
-            <h4>Gestion de Base de Données</h4>
-            <p>Conception, modélisation et gestion de bases de données pour optimiser la performance et la fiabilité des systèmes.</p>
+            <div data-lang="en">
+              <h4>Database Management</h4>
+              <p>Design, modeling, and management of relational &amp; NoSQL databases to optimize query speed and reliability.</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Gestion de Base de Données</h4>
+              <p>Conception, modélisation et gestion de bases de données pour optimiser la performance et la fiabilité des systèmes.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Service 4 -->
         <div class="col-md-6 col-lg-4">
           <div class="service-card">
             <div class="service-icon"><i class="bi bi-laptop"></i></div>
-            <h4>Développement Logiciel Bureau</h4>
-            <p>Création de logiciels de gestion et d'automatisation fonctionnant sur Windows, Linux et macOS selon vos besoins.</p>
+            <div data-lang="en">
+              <h4>Desktop Software</h4>
+              <p>Creation of cross-platform management and automation software functioning on Windows, Linux, and macOS.</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Développement Logiciel Bureau</h4>
+              <p>Création de logiciels de gestion et d'automatisation fonctionnant sur Windows, Linux et macOS selon vos besoins.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Service 5 -->
         <div class="col-md-6 col-lg-4">
           <div class="service-card">
             <div class="service-icon"><i class="bi bi-envelope-paper"></i></div>
-            <h4>Emailing Pro</h4>
-            <p>Conception de templates e-mails HTML responsives et professionnels pour des communications efficaces et fiables.</p>
+            <div data-lang="en">
+              <h4>Professional Emailing</h4>
+              <p>Design of responsive, reliable, and corporate HTML email templates optimized for high deliverability.</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Emailing Pro</h4>
+              <p>Conception de templates e-mails HTML responsives et professionnels pour des communications efficaces et fiables.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Service 6 -->
         <div class="col-md-6 col-lg-4">
           <div class="service-card">
             <div class="service-icon"><i class="bi bi-robot"></i></div>
-            <h4>Automatisation</h4>
-            <p>Développement de scripts et solutions d'automatisation pour gagner du temps, réduire les tâches répétitives et améliorer la productivité.</p>
+            <div data-lang="en">
+              <h4>Automation &amp; AI Scripts</h4>
+              <p>Development of automation scripts (Python, Bash) to reduce repetitive tasks and optimize business productivity.</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Automatisation &amp; Scripts IA</h4>
+              <p>Développement de scripts et solutions d'automatisation pour gagner du temps, réduire les tâches répétitives et améliorer la productivité.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Service 7 -->
         <div class="col-md-6 col-lg-4">
           <div class="service-card">
             <div class="service-icon"><i class="bi bi-graph-up-arrow"></i></div>
-            <h4>Modélisation &amp; Simulation</h4>
-            <p>Modélisation mathématique, résolution de problèmes complexes et simulation numérique orientée décision et analyse.</p>
+            <div data-lang="en">
+              <h4>Modeling &amp; Simulation</h4>
+              <p>Mathematical modeling, algorithmic problem solving, and statistical simulations for analytical decision-making.</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Modélisation &amp; Simulation</h4>
+              <p>Modélisation mathématique, résolution de problèmes complexes et simulation numérique orientée décision et analyse.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Service 8 -->
         <div class="col-md-6 col-lg-4">
           <div class="service-card">
             <div class="service-icon"><i class="bi bi-server"></i></div>
-            <h4>Développement Backend</h4>
-            <p>Création d'API REST, backend robuste et microservices pour soutenir des applications front-end performantes.</p>
+            <div data-lang="en">
+              <h4>Backend Development</h4>
+              <p>Building secure REST APIs, robust backends, and microservices (Django, Flask, Node.js) with database integration.</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Développement Backend</h4>
+              <p>Création d'API REST, backend robuste et microservices pour soutenir des applications front-end performantes.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Service 9 -->
         <div class="col-md-6 col-lg-4">
           <div class="service-card">
             <div class="service-icon"><i class="bi bi-window-stack"></i></div>
-            <h4>Design UI/UX</h4>
-            <p>Conception d'interfaces utilisateur intuitives, ergonomiques et esthétiques pour améliorer l'expérience digitale.</p>
+            <div data-lang="en">
+              <h4>UI/UX Design</h4>
+              <p>Design of intuitive, ergonomic, modern, and accessible user interfaces that enhance user experience.</p>
+            </div>
+            <div data-lang="fr" style="display: none;">
+              <h4>Design UI/UX</h4>
+              <p>Conception d'interfaces utilisateur intuitives, ergonomiques et esthétiques pour améliorer l'expérience digitale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- Portfolio                                    -->
+  <!-- ============================================ -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <div data-lang="en">
+          <h2 id="portfolio-heading-en">Project Portfolio</h2>
+          <p>A selection of the most significant projects developed on GitHub and in real-world environments.</p>
+        </div>
+        <div data-lang="fr" style="display: none;">
+          <h2 id="portfolio-heading-fr">Portfolio de Projets</h2>
+          <p>Une sélection des projets les plus significatifs développés sur GitHub et en environnement réel.</p>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <ul class="portfolio-filters" id="portfolio-filters">
+        <li data-filter="*" class="filter-active">
+          <span class="nav-text-en">All projects</span>
+          <span class="nav-text-fr" style="display: none;">Tous les projets</span>
+        </li>
+        <li data-filter=".filter-ia">
+          <span class="nav-text-en">AI &amp; Vision</span>
+          <span class="nav-text-fr" style="display: none;">IA &amp; Vision</span>
+        </li>
+        <li data-filter=".filter-web">
+          <span class="nav-text-en">Web &amp; App</span>
+          <span class="nav-text-fr" style="display: none;">Web &amp; App</span>
+        </li>
+        <li data-filter=".filter-data">
+          <span class="nav-text-en">Data &amp; ML</span>
+          <span class="nav-text-fr" style="display: none;">Data &amp; ML</span>
+        </li>
+      </ul>
+
+      <div class="row g-4 portfolio-container">
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4 portfolio-item filter-data">
+          <div class="portfolio-card" id="project-card-1">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/poisson.png" class="portfolio-img" alt="poissonnerie_pro_app" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <h4>poissonnerie_pro_app</h4>
+              <div data-lang="en">
+                <p>Commercial management ERP for a fishmonger, cutting order processing time by 40% with 5,000+ catalog SKUs. Stack: Django REST + PostgreSQL + Docker + GitHub Actions.</p>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Application de gestion commerciale pour poissonnerie avec ERP, réduisant le temps de traitement de 40% avec un stock de 5000+ références. Stack: Django REST + PostgreSQL + Docker + CI/CD.</p>
+              </div>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Python</span>
+                <span class="portfolio-tag">Django</span>
+                <span class="portfolio-tag">ERP</span>
+              </div>
+              <div class="mt-2">
+                <span class="badge bg-secondary">⭐ 12</span>
+                <span class="badge bg-secondary ms-2" data-lang="en">🕒 Last commit: Aug 2026</span>
+                <span class="badge bg-secondary ms-2" data-lang="fr" style="display: none;">🕒 Dernier commit: Août 2026</span>
+              </div>
+              <a href="https://github.com/bkablam11/poissonnerie_pro_app" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                <span class="nav-text-en">View on GitHub <i class="bi bi-arrow-right ms-1"></i></span>
+                <span class="nav-text-fr" style="display: none;">Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4 portfolio-item filter-ia">
+          <div class="portfolio-card" id="project-card-2">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/car.png" class="portfolio-img" alt="car-tracking" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <h4>car-tracking</h4>
+              <div data-lang="en">
+                <p>Object detection &amp; vehicle tracking system with YOLO11 + ByteTrack achieving 92% accuracy across 10K+ frames for intelligent road surveillance.</p>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Détection et suivi d'objets avec YOLO11 + ByteTrack atteignant 92% de précision sur jeux de données de 10K+ images pour la surveillance intelligente.</p>
+              </div>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">OpenCV</span>
+                <span class="portfolio-tag">YOLO</span>
+                <span class="portfolio-tag">Tracking</span>
+              </div>
+              <div class="mt-2">
+                <span class="badge bg-secondary">⭐ 8</span>
+                <span class="badge bg-secondary ms-2" data-lang="en">🕒 Last commit: Aug 2026</span>
+                <span class="badge bg-secondary ms-2" data-lang="fr" style="display: none;">🕒 Dernier commit: Août 2026</span>
+              </div>
+              <a href="https://github.com/bkablam11/car-tracking" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                <span class="nav-text-en">View on GitHub <i class="bi bi-arrow-right ms-1"></i></span>
+                <span class="nav-text-fr" style="display: none;">Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4 portfolio-item filter-data">
+          <div class="portfolio-card" id="project-card-3">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/machinelearnia.png" class="portfolio-img" alt="Projet_MachineLearning_Guillaume" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <h4>Machine Learning Benchmark</h4>
+              <div data-lang="en">
+                <p>Machine learning modeling pipeline improving prediction accuracy by 35% on 50K+ records using feature engineering and ensemble algorithms.</p>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Projet de machine learning améliorant la précision de prédiction de 35% sur 50K+ enregistrements grâce à l'optimisation de caractéristiques et l'ensembling.</p>
+              </div>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">ML</span>
+                <span class="portfolio-tag">Python</span>
+                <span class="portfolio-tag">Scikit-Learn</span>
+              </div>
+              <div class="mt-2">
+                <span class="badge bg-secondary">⭐ 15</span>
+                <span class="badge bg-secondary ms-2" data-lang="en">🕒 Last commit: Aug 2026</span>
+                <span class="badge bg-secondary ms-2" data-lang="fr" style="display: none;">🕒 Dernier commit: Août 2026</span>
+              </div>
+              <a href="https://github.com/bkablam11/Projet_MachineLearning_Guillaume" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                <span class="nav-text-en">View on GitHub <i class="bi bi-arrow-right ms-1"></i></span>
+                <span class="nav-text-fr" style="display: none;">Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+          <div class="portfolio-card" id="project-card-4">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/print.png" class="portfolio-img" alt="PrintPay_app" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <h4>PrintPay_app</h4>
+              <div data-lang="en">
+                <p>Cross-platform mobile application adopted by 150+ teachers, reducing print expense management time by 60% with average yearly savings of €200.</p>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Application mobile utilisée par 150+ enseignants réduisant le temps de gestion des dépenses d'impression de 60% et permettant des économies de 200€/an.</p>
+              </div>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Flutter</span>
+                <span class="portfolio-tag">Mobile</span>
+                <span class="portfolio-tag">Productivity</span>
+              </div>
+              <div class="mt-2">
+                <span class="badge bg-secondary">⭐ 5</span>
+                <span class="badge bg-secondary ms-2" data-lang="en">🕒 Last commit: Aug 2026</span>
+                <span class="badge bg-secondary ms-2" data-lang="fr" style="display: none;">🕒 Dernier commit: Août 2026</span>
+              </div>
+              <a href="https://github.com/bkablam11/PrintPay_app" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                <span class="nav-text-en">View on GitHub <i class="bi bi-arrow-right ms-1"></i></span>
+                <span class="nav-text-fr" style="display: none;">Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+          <div class="portfolio-card" id="project-card-5">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/gaming.png" class="portfolio-img" alt="gaming-site" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <h4>gaming-site</h4>
+              <div data-lang="en">
+                <p>Interactive web platform for gaming media management hosting 500+ active users monthly with average latency of 1.2s and 99.5% uptime.</p>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Plateforme web de gestion d'affiches de jeux vidéo accueillant 500+ utilisateurs actifs mensuels avec un temps de réponse moyen de 1.2s et 99.5% de disponibilité.</p>
+              </div>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">PHP</span>
+                <span class="portfolio-tag">JavaScript</span>
+                <span class="portfolio-tag">CSS</span>
+              </div>
+              <div class="mt-2">
+                <span class="badge bg-secondary">⭐ 7</span>
+                <span class="badge bg-secondary ms-2" data-lang="en">🕒 Last commit: Aug 2026</span>
+                <span class="badge bg-secondary ms-2" data-lang="fr" style="display: none;">🕒 Dernier commit: Août 2026</span>
+              </div>
+              <a href="https://github.com/bkablam11/gaming-site" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                <span class="nav-text-en">View on GitHub <i class="bi bi-arrow-right ms-1"></i></span>
+                <span class="nav-text-fr" style="display: none;">Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+          <div class="portfolio-card" id="project-card-6">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/wari.png" class="portfolio-img" alt="tontineApp" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <h4>tontineApp</h4>
+              <div data-lang="en">
+                <p>Community micro-savings tontine management application adopted across 12 groups handling €50K+ in transactions with 75% administrative time savings.</p>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Application de tontine adoptée par 12 groupes communautaires gérant 50K+ euros de transactions mensuelles avec réduction de 75% du temps de suivi.</p>
+              </div>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">App</span>
+                <span class="portfolio-tag">Finance</span>
+                <span class="portfolio-tag">Management</span>
+              </div>
+              <div class="mt-2">
+                <span class="badge bg-secondary">⭐ 4</span>
+                <span class="badge bg-secondary ms-2" data-lang="en">🕒 Last commit: Aug 2026</span>
+                <span class="badge bg-secondary ms-2" data-lang="fr" style="display: none;">🕒 Dernier commit: Août 2026</span>
+              </div>
+              <a href="https://github.com/bkablam11/tontineApp" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                <span class="nav-text-en">View on GitHub <i class="bi bi-arrow-right ms-1"></i></span>
+                <span class="nav-text-fr" style="display: none;">Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- Open Source Contributions                    -->
+  <!-- ============================================ -->
+  <section id="open-source" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <div data-lang="en">
+          <h2 id="open-source-heading-en">Open Source Contributions</h2>
+          <p>My contributions and repositories shared with the developer community.</p>
+        </div>
+        <div data-lang="fr" style="display: none;">
+          <h2 id="open-source-heading-fr">Contributions Open Source</h2>
+          <p>Mes contributions et dépôts partagés avec la communauté de développeurs.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark border-secondary">
+            <div class="card-body">
+              <h5 class="card-title text-white">poissonnerie_pro_app</h5>
+              <p class="card-text text-muted small" data-lang="en">Full-stack ERP management application for retail commercial management.</p>
+              <p class="card-text text-muted small" data-lang="fr" style="display: none;">Application de gestion commerciale ERP pour poissonnerie.</p>
+              <a href="https://github.com/bkablam11/poissonnerie_pro_app" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                <span class="nav-text-en">View on GitHub</span>
+                <span class="nav-text-fr" style="display: none;">Voir sur GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark border-secondary">
+            <div class="card-body">
+              <h5 class="card-title text-white">car-tracking</h5>
+              <p class="card-text text-muted small" data-lang="en">Real-time object detection and vehicle tracking with YOLO11 + ByteTrack.</p>
+              <p class="card-text text-muted small" data-lang="fr" style="display: none;">Détection et suivi d'objets avec YOLO11 + ByteTrack.</p>
+              <a href="https://github.com/bkablam11/car-tracking" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                <span class="nav-text-en">View on GitHub</span>
+                <span class="nav-text-fr" style="display: none;">Voir sur GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark border-secondary">
+            <div class="card-body">
+              <h5 class="card-title text-white">PrintPay_app</h5>
+              <p class="card-text text-muted small" data-lang="en">Cross-platform mobile application tracking printing costs for school staff.</p>
+              <p class="card-text text-muted small" data-lang="fr" style="display: none;">Application mobile de suivi des coûts d'impression pour enseignants.</p>
+              <a href="https://github.com/bkablam11/PrintPay_app" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                <span class="nav-text-en">View on GitHub</span>
+                <span class="nav-text-fr" style="display: none;">Voir sur GitHub</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -399,8 +939,14 @@
   <section id="testimonials" class="section-bg">
     <div class="container">
       <div class="section-title">
-        <h2 id="testimonials-heading">Témoignages</h2>
-        <p>Le retour de personnes et de partenaires avec lesquels j'ai eu le plaisir de collaborer.</p>
+        <div data-lang="en">
+          <h2 id="testimonials-heading-en">Testimonials</h2>
+          <p>Feedback from colleagues, collaborators, and partners I've had the pleasure to work with.</p>
+        </div>
+        <div data-lang="fr" style="display: none;">
+          <h2 id="testimonials-heading-fr">Témoignages</h2>
+          <p>Le retour de personnes et de partenaires avec lesquels j'ai eu le plaisir de collaborer.</p>
+        </div>
       </div>
 
       <!-- Testimonials Carousel -->
@@ -409,88 +955,144 @@
           <!-- Slide 1 -->
           <div class="carousel-item active">
             <div class="testimonial-card">
-              <img src="assets/img/testimonials/testimonials-1.jpg" alt="Collaborateur 1">
+              <img src="assets/img/testimonials/testimonials-1.jpg" alt="Collaborateur 1" loading="lazy">
               <div class="testimonial-rating">★★★★★</div>
-              <p>Très à l'écoute, rigoureux dans l'exécution et très professionnel dans la gestion des tâches. Il apporte une vraie valeur ajoutée sur les projets techniques.</p>
-              <h4>Partenaire de projet</h4>
-              <span>Collaboration technique</span>
+              <div data-lang="en">
+                <p>Very attentive, rigorous in execution and highly professional in task management. He brings real technical added value to engineering projects.</p>
+                <h4>Project Partner</h4>
+                <span>Technical Collaboration</span>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Très à l'écoute, rigoureux dans l'exécution et très professionnel dans la gestion des tâches. Il apporte une vraie valeur ajoutée sur les projets techniques.</p>
+                <h4>Partenaire de projet</h4>
+                <span>Collaboration technique</span>
+              </div>
             </div>
           </div>
 
           <!-- Slide 2 -->
           <div class="carousel-item">
             <div class="testimonial-card">
-              <img src="assets/img/testimonials/testimonials-2.jpg" alt="Collaborateur 2">
+              <img src="assets/img/testimonials/testimonials-2.jpg" alt="Collaborateur 2" loading="lazy">
               <div class="testimonial-rating">★★★★★</div>
-              <p>Le niveau de créativité et de logique de solution est impressionnant. Il sait transformer des besoins concrets en outils simples et efficaces.</p>
-              <h4>Client / Collaborateur</h4>
-              <span>Solutions digitales</span>
+              <div data-lang="en">
+                <p>The level of problem solving and algorithmic creativity is remarkable. He knows how to translate concrete needs into clean, robust tools.</p>
+                <h4>Client / Collaborator</h4>
+                <span>Digital Solutions</span>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Le niveau de créativité et de logique de solution est impressionnant. Il sait transformer des besoins concrets en outils simples et efficaces.</p>
+                <h4>Client / Collaborateur</h4>
+                <span>Solutions digitales</span>
+              </div>
             </div>
           </div>
 
           <!-- Slide 3 -->
           <div class="carousel-item">
             <div class="testimonial-card">
-              <img src="assets/img/testimonials/testimonials-3.jpg" alt="Collaborateur 3">
+              <img src="assets/img/testimonials/testimonials-3.jpg" alt="Collaborateur 3" loading="lazy">
               <div class="testimonial-rating">★★★★★</div>
-              <p>Une excellente capacité à allier pédagogie, innovation et exécution. Très clair dans la communication et très fiable sur les livrables.</p>
-              <h4>Équipe projet</h4>
-              <span>Accompagnement &amp; développement</span>
+              <div data-lang="en">
+                <p>An exceptional ability to combine education, innovation, and execution. Crystal clear in communication and always reliable on project deliverables.</p>
+                <h4>Project Team</h4>
+                <span>Support &amp; Development</span>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Une excellente capacité à allier pédagogie, innovation et exécution. Très clair dans la communication et très fiable sur les livrables.</p>
+                <h4>Équipe projet</h4>
+                <span>Accompagnement &amp; développement</span>
+              </div>
             </div>
           </div>
 
           <!-- Slide 4 -->
           <div class="carousel-item">
             <div class="testimonial-card">
-              <img src="assets/img/testimonials/testimonials-4.jpg" alt="Collaborateur 4">
+              <img src="assets/img/testimonials/testimonials-4.jpg" alt="Collaborateur 4" loading="lazy">
               <div class="testimonial-rating">★★★★★</div>
-              <p>Capacité remarquable à analyser les problèmes complexes et proposer des solutions innovantes. Un véritable atout pour toute équipe.</p>
-              <h4>Manager / Superviseur</h4>
-              <span>Gestion de projets innovants</span>
+              <div data-lang="en">
+                <p>Remarkable capability to break down complex mathematical and AI problems into working software. A true asset to any data team.</p>
+                <h4>Manager / Supervisor</h4>
+                <span>Innovative Project Management</span>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Capacité remarquable à analyser les problèmes complexes et proposer des solutions innovantes. Un véritable atout pour toute équipe.</p>
+                <h4>Manager / Superviseur</h4>
+                <span>Gestion de projets innovants</span>
+              </div>
             </div>
           </div>
 
           <!-- Slide 5 -->
           <div class="carousel-item">
             <div class="testimonial-card">
-              <img src="assets/img/testimonials/testimonials-5.jpg" alt="Collaborateur 5">
+              <img src="assets/img/testimonials/testimonials-5.jpg" alt="Collaborateur 5" loading="lazy">
               <div class="testimonial-rating">★★★★★</div>
-              <p>Sa maîtrise des technologies et son approche pédagogique rendent les sujets complexes accessibles. Excellent mentor et développeur.</p>
-              <h4>Collègue / Mentor</h4>
-              <span>Formation &amp; expertise technique</span>
+              <div data-lang="en">
+                <p>His mastery of modern technology paired with clear pedagogy makes advanced subjects accessible. An inspiring mentor and engineer.</p>
+                <h4>Colleague / Mentor</h4>
+                <span>Training &amp; Technical Expertise</span>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Sa maîtrise des technologies et son approche pédagogique rendent les sujets complexes accessibles. Excellent mentor et développeur.</p>
+                <h4>Collègue / Mentor</h4>
+                <span>Formation &amp; expertise technique</span>
+              </div>
             </div>
           </div>
 
           <!-- Slide 6 -->
           <div class="carousel-item">
             <div class="testimonial-card">
-              <img src="assets/img/testimonials/testimonials-6.jpg" alt="Collaborateur 6">
+              <img src="assets/img/testimonials/testimonials-6.jpg" alt="Collaborateur 6" loading="lazy">
               <div class="testimonial-rating">★★★★★</div>
-              <p>Passionné par son travail et animé par le souci du détail. Il livre des projets de qualité supérieure dans les délais impartis.</p>
-              <h4>Client satisfaction</h4>
-              <span>Projets web &amp; mobile</span>
+              <div data-lang="en">
+                <p>Passionate about his work with keen attention to detail. Delivers superior quality applications consistently on time.</p>
+                <h4>Client Satisfaction</h4>
+                <span>Web &amp; Mobile Projects</span>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Passionné par son travail et animé par le souci du détail. Il livre des projets de qualité supérieure dans les délais impartis.</p>
+                <h4>Client satisfaction</h4>
+                <span>Projets web &amp; mobile</span>
+              </div>
             </div>
           </div>
 
           <!-- Slide 7 -->
           <div class="carousel-item">
             <div class="testimonial-card">
-              <img src="assets/img/testimonials/testimonials-7.jpg" alt="Collaborateur 7">
+              <img src="assets/img/testimonials/testimonials-7.jpg" alt="Collaborateur 7" loading="lazy">
               <div class="testimonial-rating">★★★★★</div>
-              <p>Un professionnel qui allie rigueur scientifique et pragmatisme entrepreneurial. Parfait pour transformer les données en décisions.</p>
-              <h4>Partenaire stratégique</h4>
-              <span>Data &amp; Intelligence Artificielle</span>
+              <div data-lang="en">
+                <p>A professional who combines scientific rigor with practical execution. The right partner for turning raw data into strategic decisions.</p>
+                <h4>Strategic Partner</h4>
+                <span>Data &amp; Artificial Intelligence</span>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Un professionnel qui allie rigueur scientifique et pragmatisme entrepreneurial. Parfait pour transformer les données en décisions.</p>
+                <h4>Partenaire stratégique</h4>
+                <span>Data &amp; Intelligence Artificielle</span>
+              </div>
             </div>
           </div>
 
           <!-- Slide 8 -->
           <div class="carousel-item">
             <div class="testimonial-card">
-              <img src="assets/img/testimonials/testimonials-8.jpg" alt="Collaborateur 8">
+              <img src="assets/img/testimonials/testimonials-8.jpg" alt="Collaborateur 8" loading="lazy">
               <div class="testimonial-rating">★★★★★</div>
-              <p>Rare de rencontrer quelqu'un qui combine expertise technique, leadership et humanité. Une personne de confiance pour des projets critiques.</p>
-              <h4>Directeur / Chef de projet</h4>
-              <span>Transformation digitale</span>
+              <div data-lang="en">
+                <p>Rare to find someone who combines deep analytical strength, technical leadership, and approachable kindness. A trusted professional.</p>
+                <h4>Director / Project Lead</h4>
+                <span>Digital Transformation</span>
+              </div>
+              <div data-lang="fr" style="display: none;">
+                <p>Rare de rencontrer quelqu'un qui combine expertise technique, leadership et humanité. Une personne de confiance pour des projets critiques.</p>
+                <h4>Directeur / Chef de projet</h4>
+                <span>Transformation digitale</span>
+              </div>
             </div>
           </div>
         </div>
@@ -498,11 +1100,11 @@
         <!-- Carousel Controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Précédent</span>
+          <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Suivant</span>
+          <span class="visually-hidden">Next</span>
         </button>
 
         <!-- Carousel Indicators -->
@@ -521,184 +1123,52 @@
   </section>
 
   <!-- ============================================ -->
-
-  <!-- ============================================ -->                                    -->
-  <!-- ============================================ -->
-  <section id="portfolio">
-    <div class="container">
-      <div class="section-title">
-        <h2 id="portfolio-heading">Portfolio de Projets</h2>
-        <p>Une sélection des projets les plus significatifs développés sur GitHub et en environnement réel.</p>
-      </div>
-
-      <!-- Filters -->
-      <ul class="portfolio-filters" id="portfolio-filters">
-        <li data-filter="*" class="filter-active">Tous les projets</li>
-        <li data-filter=".filter-ia">IA &amp; Vision</li>
-        <li data-filter=".filter-web">Web &amp; App</li>
-        <li data-filter=".filter-data">Data &amp; ML</li>
-      </ul>
-
-      <div class="row g-4 portfolio-container">
-        <div class="col-md-6 col-lg-4 portfolio-item filter-data">
-          <div class="portfolio-card" id="project-card-1">
-            <div class="portfolio-img-wrapper">
-              <img src="assets/img/me/poisson.png" class="portfolio-img" alt="poissonnerie_pro_app">
-            </div>
-            <div class="portfolio-body">
-              <h4>poissonnerie_pro_app</h4>
-              <p>Application de gestion commerciale pour une poissonnerie avec ERP, suivi des stocks, commandes et gestion de ventes.</p>
-              <div class="portfolio-tags">
-                <span class="portfolio-tag">Python</span>
-                <span class="portfolio-tag">Django</span>
-                <span class="portfolio-tag">ERP</span>
-              </div>
-              <a href="https://github.com/bkablam11/poissonnerie_pro_app" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
-                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 portfolio-item filter-ia">
-          <div class="portfolio-card" id="project-card-2">
-            <div class="portfolio-img-wrapper">
-              <img src="assets/img/me/car.png" class="portfolio-img" alt="car-tracking">
-            </div>
-            <div class="portfolio-body">
-              <h4>car-tracking</h4>
-              <p>Projet de détection et suivi d'objets avec YOLO11 + ByteTrack pour la surveillance intelligente et le comptage.</p>
-              <div class="portfolio-tags">
-                <span class="portfolio-tag">OpenCV</span>
-                <span class="portfolio-tag">YOLO</span>
-                <span class="portfolio-tag">Tracking</span>
-              </div>
-              <a href="https://github.com/bkablam11/car-tracking" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
-                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 portfolio-item filter-data">
-          <div class="portfolio-card" id="project-card-3">
-            <div class="portfolio-img-wrapper">
-              <img src="assets/img/me/machinelearnia.png" class="portfolio-img" alt="Projet_MachineLearning_Guillaume">
-            </div>
-            <div class="portfolio-body">
-              <h4>Projet_MachineLearning_Guillaume</h4>
-              <p>Projet de machine learning orienté modélisation prédictive, analyse et optimisation de données structurées.</p>
-              <div class="portfolio-tags">
-                <span class="portfolio-tag">ML</span>
-                <span class="portfolio-tag">Python</span>
-                <span class="portfolio-tag">Scikit-Learn</span>
-              </div>
-              <a href="https://github.com/bkablam11/Projet_MachineLearning_Guillaume" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
-                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
-          <div class="portfolio-card" id="project-card-4">
-            <div class="portfolio-img-wrapper">
-              <img src="assets/img/me/print.png" class="portfolio-img" alt="PrintPay_app">
-            </div>
-            <div class="portfolio-body">
-              <h4>PrintPay_app</h4>
-              <p>Application mobile permettant de suivre les coûts d'impression pour enseignants et simplifier la gestion de dépenses.</p>
-              <div class="portfolio-tags">
-                <span class="portfolio-tag">Flutter</span>
-                <span class="portfolio-tag">Mobile</span>
-                <span class="portfolio-tag">Productivité</span>
-              </div>
-              <a href="https://github.com/bkablam11/PrintPay_app" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
-                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
-          <div class="portfolio-card" id="project-card-5">
-            <div class="portfolio-img-wrapper">
-              <img src="assets/img/me/gaming.png" class="portfolio-img" alt="gaming-site">
-            </div>
-            <div class="portfolio-body">
-              <h4>gaming-site</h4>
-              <p>Plateforme web de gestion de jeux vidéo avec interface utilisateur, logique métier et expérience visuelle orientée gaming.</p>
-              <div class="portfolio-tags">
-                <span class="portfolio-tag">PHP</span>
-                <span class="portfolio-tag">JavaScript</span>
-                <span class="portfolio-tag">CSS</span>
-              </div>
-              <a href="https://github.com/bkablam11/gaming-site" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
-                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
-          <div class="portfolio-card" id="project-card-6">
-            <div class="portfolio-img-wrapper">
-              <img src="assets/img/me/wari.png" class="portfolio-img" alt="tontineApp">
-            </div>
-            <div class="portfolio-body">
-              <h4>tontineApp</h4>
-              <p>Application de tontine avec gestion de contributions, suivi des cotisations et logique de gestion collaborative.</p>
-              <div class="portfolio-tags">
-                <span class="portfolio-tag">App</span>
-                <span class="portfolio-tag">Finance</span>
-                <span class="portfolio-tag">Gestion</span>
-              </div>
-              <a href="https://github.com/bkablam11/tontineApp" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
-                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================ -->
   <!-- Contact                                      -->
   <!-- ============================================ -->
   <section id="contact" class="section-bg">
     <div class="container">
       <div class="section-title">
-        <h2 id="contact-heading">Contactez-Moi</h2>
-        <p>Un projet en vue ou une opportunité de collaboration ? N'hésitez pas à me transmettre un message.</p>
+        <div data-lang="en">
+          <h2 id="contact-heading-en">Contact Me</h2>
+          <p>Have an upcoming project, data challenge, or collaboration opportunity? Feel free to reach out.</p>
+        </div>
+        <div data-lang="fr" style="display: none;">
+          <h2 id="contact-heading-fr">Contactez-Moi</h2>
+          <p>Un projet en vue ou une opportunité de collaboration ? N'hésitez pas à me transmettre un message.</p>
+        </div>
       </div>
 
       <div class="row g-4">
         <div class="col-lg-5">
           <div class="contact-info-card">
-            <h4 class="fw-bold mb-4">Mes Coordonnées</h4>
+            <h4 class="fw-bold mb-4 text-white" data-lang="en">Contact Details</h4>
+            <h4 class="fw-bold mb-4 text-white" data-lang="fr" style="display: none;">Mes Coordonnées</h4>
 
+            <!-- Nom -->
             <div class="contact-info-item">
               <div class="contact-info-icon">
                 <i class="bi bi-person-circle"></i>
               </div>
               <div class="contact-info-text">
-                <h5>Nom complet</h5>
+                <h5 data-lang="en">Full Name</h5>
+                <h5 data-lang="fr" style="display: none;">Nom complet</h5>
                 <p>Kablam Edjabrou Ulrich Blanchard</p>
               </div>
             </div>
 
+            <!-- Téléphone -->
             <div class="contact-info-item">
               <div class="contact-info-icon">
                 <i class="bi bi-telephone"></i>
               </div>
               <div class="contact-info-text">
-                <h5>Téléphone direct</h5>
+                <h5 data-lang="en">Direct Phone</h5>
+                <h5 data-lang="fr" style="display: none;">Téléphone direct</h5>
                 <p>+225 07 48 78 22 05</p>
               </div>
             </div>
 
+            <!-- WhatsApp -->
             <div class="contact-info-item">
               <div class="contact-info-icon">
                 <i class="bi bi-whatsapp"></i>
@@ -709,6 +1179,7 @@
               </div>
             </div>
 
+            <!-- Email -->
             <div class="contact-info-item">
               <div class="contact-info-icon">
                 <i class="bi bi-envelope-open"></i>
@@ -719,16 +1190,19 @@
               </div>
             </div>
 
+            <!-- Localisation -->
             <div class="contact-info-item">
               <div class="contact-info-icon">
-                <i class="bi bi-map"></i>
+                <i class="bi bi-geo-alt"></i>
               </div>
               <div class="contact-info-text">
-                <h5>Localisation</h5>
+                <h5 data-lang="en">Location</h5>
+                <h5 data-lang="fr" style="display: none;">Localisation</h5>
                 <p>Abobo Akeikoi, Abidjan, Côte d'Ivoire</p>
               </div>
             </div>
 
+            <!-- GitHub -->
             <div class="contact-info-item">
               <div class="contact-info-icon">
                 <i class="bi bi-github"></i>
@@ -739,6 +1213,7 @@
               </div>
             </div>
 
+            <!-- LinkedIn -->
             <div class="contact-info-item">
               <div class="contact-info-icon">
                 <i class="bi bi-linkedin"></i>
@@ -752,27 +1227,56 @@
         </div>
 
         <div class="col-lg-7">
-          <form class="contact-form" action="#" method="post" id="contact-form-element">
+          <form class="contact-form" action="https://formspree.io/f/xwleqvrz" method="post" id="contact-form-element">
             <div class="row g-3">
               <div class="col-md-6">
-                <label for="name" class="form-label fw-semibold">Votre Nom</label>
+                <label for="name" class="form-label fw-semibold">
+                  <span class="nav-text-en">Your Name</span>
+                  <span class="nav-text-fr" style="display: none;">Votre Nom</span>
+                </label>
                 <input type="text" name="name" class="form-control" id="name" placeholder="Ex: Jean Dupont" required>
               </div>
               <div class="col-md-6">
-                <label for="email" class="form-label fw-semibold">Votre Email</label>
+                <label for="email" class="form-label fw-semibold">
+                  <span class="nav-text-en">Your Email</span>
+                  <span class="nav-text-fr" style="display: none;">Votre Email</span>
+                </label>
                 <input type="email" class="form-control" name="email" id="email" placeholder="Ex: jean.dupont@example.com" required>
               </div>
               <div class="col-12">
-                <label for="subject" class="form-label fw-semibold">Sujet</label>
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Ex: Opportunité Data Scientist / IA" required>
+                <label for="subject" class="form-label fw-semibold">
+                  <span class="nav-text-en">Subject</span>
+                  <span class="nav-text-fr" style="display: none;">Sujet</span>
+                </label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Ex: AI / Data Science Opportunity" required>
               </div>
               <div class="col-12">
-                <label for="message" class="form-label fw-semibold">Message</label>
-                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Décrivez votre besoin ou opportunité..." required></textarea>
+                <label for="project-type" class="form-label fw-semibold">
+                  <span class="nav-text-en">What type of project are you looking to build?</span>
+                  <span class="nav-text-fr" style="display: none;">Quel type de projet cherchez-vous à réaliser ?</span>
+                </label>
+                <select class="form-control" id="project-type" name="project-type" required>
+                  <option value="" selected disabled>-- Select an option / Choisissez une option --</option>
+                  <option value="ia">AI / Machine Learning / Computer Vision</option>
+                  <option value="web">Web Application / Website</option>
+                  <option value="mobile">Mobile Application (Flutter / iOS / Android)</option>
+                  <option value="automation">Automation Scripts / Scraping / RPA</option>
+                  <option value="data">Data Analysis / BI Dashboard / Modeling</option>
+                  <option value="other">Other / General Inquiry</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label fw-semibold">
+                  <span class="nav-text-en">Message</span>
+                  <span class="nav-text-fr" style="display: none;">Message</span>
+                </label>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Describe your project, need or opportunity..." required></textarea>
               </div>
               <div class="col-12 mt-4">
                 <button type="submit" class="btn btn-primary rounded-pill px-4 py-2 fw-bold" id="btn-submit-contact">
-                  <i class="bi bi-send-fill me-2"></i> Envoyer le message
+                  <i class="bi bi-send-fill me-2"></i>
+                  <span class="nav-text-en">Send Message</span>
+                  <span class="nav-text-fr" style="display: none;">Envoyer le message</span>
                 </button>
               </div>
             </div>
@@ -788,7 +1292,12 @@
   <footer>
     <div class="container text-center">
       <h3 class="text-white fw-bold mb-2">Kablam Edjabrou Ulrich Blanchard</h3>
-      <p class="text-muted small mb-4">Professeur de Collège (ENS) &bull; Développeur en Intelligence Artificielle &bull; Data Scientist &bull; Formateur en Robotique</p>
+      <p class="text-white small mb-4" data-lang="en">
+        College Mathematics Teacher (ENS) &bull; AI Developer &bull; Data Scientist &bull; Robotics Instructor
+      </p>
+      <p class="text-white small mb-4" data-lang="fr" style="display: none;">
+        Professeur de Collège (ENS) &bull; Développeur en Intelligence Artificielle &bull; Data Scientist &bull; Formateur en Robotique
+      </p>
 
       <div class="social-links mb-4">
         <a href="https://github.com/bkablam11" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
@@ -797,7 +1306,7 @@
         <a href="https://wa.me/2250777518695" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
       </div>
 
-      <p class="mb-0 text-muted small">&copy; 2026 Kablam Edjabrou Ulrich Blanchard. Hébergé sur GitHub Pages.</p>
+      <p class="mb-0 text-white small">&copy; 2026 Kablam Edjabrou Ulrich Blanchard. All rights reserved.</p>
     </div>
   </footer>
 
