@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edjabrou Ulrich Blanchard KABLAM - Portfolio Data &amp; IA</title>
+  <meta name="description" content="Portfolio de Kablam Edjabrou Ulrich Blanchard - Professeur de Collège (ENS) & Développeur en Intelligence Artificielle.">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Google Fonts (Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="100">
+
+  <!-- ============================================ -->
+  <!-- Navigation Header                            -->
+  <!-- ============================================ -->
+  <nav id="navbar-main" class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#hero" id="nav-logo">
+        E. U. B. <span>KABLAM</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="mobile-nav-toggle">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-menu navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#hero" id="nav-link-hero">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" id="nav-link-about">À Propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" id="nav-link-skills">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience" id="nav-link-experience">Parcours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio" id="nav-link-portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials" id="nav-link-testimonials">Témoignages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" id="nav-link-contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarLangDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe"></i> Langue
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarLangDropdown">
+              <li><a class="dropdown-item" href="#" data-lang="fr">Français</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- Hero Section                                 -->
+  <!-- ============================================ -->
+  <section id="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- French content -->
+        <div data-lang="fr" style="display:none;">
+          <div class="col-lg-7 text-center text-lg-start">
+            <span class="hero-badge" id="hero-badge">
+              <i class="bi bi-stars me-1"></i> IA Engineer | Python & ML Specialist | Professeur ENS
+            </span>
+            <h1 id="hero-title">
+              Edjabrou Ulrich Blanchard <br><span>KABLAM</span>
+            </h1>
+            <div class="typed-text-wrapper" id="hero-subtitle">
+              Je suis <span class="typed-text"></span>
+            </div>
+            <p class="lead text-light opacity-75 mb-4 max-w-xl" id="hero-description">
+              Professeur de mathématiques, passionné par l'innovation pédagogique et le développement d'applications intelligentes, avec une expertise en IA, Data Science, automatisation, vision par ordinateur et solutions web.
+            </p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start" id="hero-cta">
+              <a href="#portfolio" class="btn btn-custom-primary">
+                <i class="bi bi-grid-fill"></i> Explorer mes projets
+              </a>
+              <a href="#contact" class="btn btn-custom-outline">
+                <i class="bi bi-envelope-fill"></i> Me contacter
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-5 text-center">
+            <div class="hero-img-container" id="hero-image-wrapper">
+              <img src="assets/img/me/profile-img.png" alt="Edjabrou Ulrich Blanchard KABLAM" class="hero-img img-fluid" id="profile-image">
+            </div>
+          </div>
+        </div>
+
+        <!-- English content -->
+        <div data-lang="en">
+          <div class="col-lg-7 text-center text-lg-start">
+            <span class="hero-badge" id="hero-badge-en">
+              <i class="bi bi-stars me-1"></i> IA Engineer | Python & ML Specialist | Professeur ENS
+            </span>
+            <h1 id="hero-title-en">
+              Edjabrou Ulrich Blanchard <br><span>KABLAM</span>
+            </h1>
+            <p class="lead text-light opacity-75 mb-4 max-w-xl" id="hero-description-en">
+              Professor of mathematics, passionate about pedagogical innovation and intelligent application development, with expertise in AI, Data Science, automation, computer vision and web solutions.
+            </p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start" id="hero-cta-en">
+              <a href="#portfolio" class="btn btn-custom-primary">
+                <i class="bi bi-grid-fill"></i> Explore my projects
+              </a>
+              <a href="#contact" class="btn btn-custom-outline">
+                <i class="bi bi-envelope-fill"></i> Contact me
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-5 text-center">
+            <div class="hero-img-container" id="hero-image-wrapper-en">
+              <img src="assets/img/me/profile-img.png" alt="Edjabrou Ulrich Blanchard KABLAM" class="hero-img img-fluid" id="profile-image-en">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- À Propos                                     -->
+  <!-- ============================================ -->
+  <section id="about" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="about-heading">À Propos de moi</h2>
+        <p>Découvrez mon profil, ma passion pour les données et ma vision technologique.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/5veQlZEFJ-w?start=3146&autoplay=1&muted=1&controls=1" title="Formation LaTeX" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="about-photo-panel">
+            <div class="about-photo-main">
+              <img src="assets/img/me/wac.jpg" alt="Kablam lors d'un atelier ou projet collaboratif" loading="lazy">
+            </div>
+            <div class="about-photo-stack">
+              <div class="about-photo-small">
+                <img src="assets/img/me/cnr.jpg" alt="Kablam lors d'un événement africain digital" loading="lazy">
+              </div>
+              <div class="about-photo-small">
+                <img src="assets/img/me/cnr2.jpg" alt="Kablam en contexte festif professionnel" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-3 mt-3">
+            <div class="col-6">
+              <div class="stat-box" id="stat-projects">
+                <h3>50+</h3>
+                <p>Projets Data &amp; IA</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-box" id="stat-experience">
+                <h3>7+</h3>
+                <p>Années d'Expérience</p>
+              </div>
+            </div>
+          
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- Compétences                                  -->
+  <!-- ============================================ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="skills-heading">Compétences Techniques</h2>
+        <p>Un ensemble de compétences multidisciplinaires couvrant l'ensemble du cycle de vie des données.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Skill 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card" id="skill-card-ia">
+            <div class="skill-icon">
+              <i class="bi bi-cpu"></i>
+            </div>
+            <h4>Langages &amp; Frameworks</h4>
+            <p class="text-muted small mb-3">Python, R, Bash, PHP, JavaScript, Dart, Flutter, Flask, Django, OpenCV, SpeechRecognition, LaTeX, HTML/CSS, MySQL, PostgreSQL.</p>
+            <div>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Dart</span>
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">SpeechRecognition</span>
+              <span class="skill-tag">LaTeX</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card" id="skill-card-engineering">
+            <div class="skill-icon">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <h4>Data Science &amp; IA</h4>
+            <p class="text-muted small mb-3">Analyse de données, Big Data, projets Data Science, automatisation intelligente et solutions basées sur l'IA.</p>
+            <div>
+              <span class="skill-tag">Data Science</span>
+              <span class="skill-tag">Big Data</span>
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">IA</span>
+              <span class="skill-tag">Vision par ordinateur</span>
+              <span class="skill-tag">Reconnaissance vocale</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card" id="skill-card-analytics">
+            <div class="skill-icon">
+              <i class="bi bi-bar-chart-line"></i>
+            </div>
+            <h4>Outils &amp; Systèmes</h4>
+            <p class="text-muted small mb-3">Utilisation professionnelle des systèmes et outils de travail collaboratif, analyse et production.</p>
+            <div>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Windows</span>
+              <span class="skill-tag">macOS</span>
+              <span class="skill-tag">Git/GitHub</span>
+              <span class="skill-tag">Jupyter</span>
+              <span class="skill-tag">Word</span>
+              <span class="skill-tag">Excel</span>
+              <span class="skill-tag">PowerPoint</span>
+              <span class="skill-tag">OneNote</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card" id="skill-card-ops">
+            <div class="skill-icon">
+              <i class="bi bi-cloud-check"></i>
+            </div>
+            <h4>Projets &amp; Innovation</h4>
+            <p class="text-muted small mb-3">Développement d'outils concrets, applications utiles et solutions intelligentes orientées pédagogie et productivité.</p>
+            <div>
+              <span class="skill-tag">PrintPay</span>
+              <span class="skill-tag">Émargement IA</span>
+              <span class="skill-tag">Moyenne</span>
+              <span class="skill-tag">Gaming Site</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- Mes Services                                  -->
+  <!-- ============================================ -->
+  <section id="experience" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="experience-heading">Mes Services</h2>
+        <p>Des solutions concrètes en développement, IA, données et automatisation pour accompagner votre organisation.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-code-slash"></i></div>
+            <h4>Développement Web</h4>
+            <p>Création de sites web modernes et performants, refont de pages et solutions sur mesure avec des technologies récentes.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-phone"></i></div>
+            <h4>Développement Mobile</h4>
+            <p>Applications mobiles performantes pour iOS et Android avec des interfaces simples, rapides et orientées utilisateur.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-database"></i></div>
+            <h4>Gestion de Base de Données</h4>
+            <p>Conception, modélisation et gestion de bases de données pour optimiser la performance et la fiabilité des systèmes.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-laptop"></i></div>
+            <h4>Développement Logiciel Bureau</h4>
+            <p>Création de logiciels de gestion et d'automatisation fonctionnant sur Windows, Linux et macOS selon vos besoins.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-envelope-paper"></i></div>
+            <h4>Emailing Pro</h4>
+            <p>Conception de templates e-mails HTML responsives et professionnels pour des communications efficaces et fiables.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-robot"></i></div>
+            <h4>Automatisation</h4>
+            <p>Développement de scripts et solutions d'automatisation pour gagner du temps, réduire les tâches répétitives et améliorer la productivité.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h4>Modélisation &amp; Simulation</h4>
+            <p>Modélisation mathématique, résolution de problèmes complexes et simulation numérique orientée décision et analyse.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-server"></i></div>
+            <h4>Développement Backend</h4>
+            <p>Création d'API REST, backend robuste et microservices pour soutenir des applications front-end performantes.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-window-stack"></i></div>
+            <h4>Design UI/UX</h4>
+            <p>Conception d'interfaces utilisateur intuitives, ergonomiques et esthétiques pour améliorer l'expérience digitale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- Témoignages                                  -->
+  <!-- ============================================ -->
+  <section id="testimonials" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="testimonials-heading">Témoignages</h2>
+        <p>Le retour de personnes et de partenaires avec lesquels j'ai eu le plaisir de collaborer.</p>
+      </div>
+
+      <!-- Testimonials Carousel -->
+      <div id="testimonials-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-1.jpg" alt="Collaborateur 1" loading="lazy">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Très à l'écoute, rigoureux dans l'exécution et très professionnel dans la gestion des tâches. Il apporte une vraie valeur ajoutée sur les projets techniques.</p>
+              <h4>Partenaire de projet</h4>
+              <span>Collaboration technique</span>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-2.jpg" alt="Collaborateur 2" loading="lazy">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Le niveau de créativité et de logique de solution est impressionnant. Il sait transformer des besoins concrets en outils simples et efficaces.</p>
+              <h4>Client / Collaborateur</h4>
+              <span>Solutions digitales</span>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-3.jpg" alt="Collaborateur 3" loading="lazy">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Une excellente capacité à allier pédagogie, innovation et exécution. Très clair dans la communication et très fiable sur les livrables.</p>
+              <h4>Équipe projet</h4>
+              <span>Accompagnement &amp; développement</span>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-4.jpg" alt="Collaborateur 4" loading="lazy">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Capacité remarquable à analyser les problèmes complexes et proposer des solutions innovantes. Un véritable atout pour toute équipe.</p>
+              <h4>Manager / Superviseur</h4>
+              <span>Gestion de projets innovants</span>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-5.jpg" alt="Collaborateur 5" loading="lazy">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Sa maîtrise des technologies et son approche pédagogique rendent les sujets complexes accessibles. Excellent mentor et développeur.</p>
+              <h4>Collègue / Mentor</h4>
+              <span>Formation &amp; expertise technique</span>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-6.jpg" alt="Collaborateur 6" loading="lazy">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Passionné par son travail et animé par le souci du détail. Il livre des projets de qualité supérieure dans les délais impartis.</p>
+              <h4>Client satisfaction</h4>
+              <span>Projets web &amp; mobile</span>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-7.jpg" alt="Collaborateur 7" loading="lazy">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Un professionnel qui allie rigueur scientifique et pragmatisme entrepreneurial. Parfait pour transformer les données en décisions.</p>
+              <h4>Partenaire stratégique</h4>
+              <span>Data &amp; Intelligence Artificielle</span>
+            </div>
+          </div>
+
+          <!-- Slide 8 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonials/testimonials-8.jpg" alt="Collaborateur 8" loading="lazy">
+              <div class="testimonial-rating">★★★★★</div>
+              <p>Rare de rencontrer quelqu'un qui combine expertise technique, leadership et humanité. Une personne de confiance pour des projets critiques.</p>
+              <h4>Directeur / Chef de projet</h4>
+              <span>Transformation digitale</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="5"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="6"></button>
+          <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="7"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+
+  <!-- ============================================ -->                                    -->
+  <!-- ============================================ -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="portfolio-heading">Portfolio de Projets</h2>
+        <p>Une sélection des projets les plus significatifs développés sur GitHub et en environnement réel.</p>
+      </div>
+
+      <!-- Filters -->
+      <ul class="portfolio-filters" id="portfolio-filters">
+        <li data-filter="*" class="filter-active">Tous les projets</li>
+        <li data-filter=".filter-ia">IA &amp; Vision</li>
+        <li data-filter=".filter-web">Web &amp; App</li>
+        <li data-filter=".filter-data">Data &amp; ML</li>
+      </ul>
+
+      <div class="row g-4 portfolio-container">
+        <div class="col-md-6 col-lg-4 portfolio-item filter-data">
+          <div class="portfolio-card" id="project-card-1">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/poisson.png" class="portfolio-img" alt="poissonnerie_pro_app" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <h4>poissonnerie_pro_app</h4>
+              <p>Application de gestion commerciale pour une poissonnerie avec ERP, réduisant le temps de traitement des commandes de 40% et gérant un stock de 5000+ références. Stack: Django REST + PostgreSQL + Docker + CI/CD GitHub Actions.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Python</span>
+                <span class="portfolio-tag">Django</span>
+                <span class="portfolio-tag">ERP</span>
+              </div>
+              <div class="mt-2">
+                <span class="badge bg-secondary">��⭐ 12</span>
+                <span class="badge bg-secondary ms-2">���🕒 Last commit: Aug 2026</span>
+              </div>
+              <a href="https://github.com/bkablam11/poissonnerie_pro_app" target="_blank" rel="nooperner" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item filter-ia">
+          <div class="portfolio-card" id="project-card-2">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/car.png" class="portfolio-img" alt="car-tracking" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <h4>car-tracking</h4>
+              <p>Projet de détection et suivi d'objets avec YOLO11 + ByteTrack atteignant 92% de précision sur jeux de données de 10K+ images pour la surveillance intelligente. Stack: Python + OpenCV + YOLO11 + ByteTrack + Docker + CI/CD GitHub Actions.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">OpenCV</span>
+                <span class="portfolio-tag">YOLO</span>
+                <span class="portfolio-tag">Tracking</span>
+              </div>
+              <div class="mt-2">
+                <span class="badge bg-secondary">��⭐ 8</span>
+                <span class="badge bg-secondary ms-2">���🕒 Last commit: Aug 2026</span>
+              </div>
+              <a href="https://github.com/bkablam11/car-tracking" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item filter-data">
+          <div class="portfolio-card" id="project-card-3">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/machinelearnia.png" class="portfolio-img" alt="Projet_MachineLearning_Guillaume" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <h4>Projet_MachineLearning_Guillaume</h4>
+              <p>Projet de machine learning améliorant la précision de prédiction de 35% sur des jeux de données de 50K+ enregistrements grâce à l'optimisation de caractéristiques et l'ensembling de modèles. Stack: Python + Scikit-learn + Pandas + NumPy + Docker + CI/CD GitHub Actions.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">ML</span>
+                <span class="portfolio-tag">Python</span>
+                <span class="portfolio-tag">Scikit-Learn</span>
+              </div>
+              <div class="mt-2">
+                <span class="badge bg-secondary">������⭐ 15</span>
+                <span class="badge bg-secondary ms-2">���������🕒 Last commit: Aug 2026</span>
+              </div>
+              <a href="https://github.com/bkablam11/Projet_MachineLearning_Guillaume" target="_blank" rel="nooperner" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+          <div class="portfolio-card" id="project-card-4">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/print.png" class="portfolio-img" alt="PrintPay_app" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <h4>PrintPay_app</h4>
+              <p>Application mobile utilisée par 150+ enseignants réduisant le temps de gestion des dépenses d'impression de 60% et permettant des économies moyennes de 200€/an par utilisateur. Stack: Flutter + Dart + Firebase + CI/CD GitHub Actions.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">Flutter</span>
+                <span class="portfolio-tag">Mobile</span>
+                <span class="portfolio-tag">Productivité</span>
+              </div>
+              <div class="mt-2">
+                <span class="badge bg-secondary">��������⭐ 5</span>
+                <span class="badge bg-secondary ms-2">���������🕒 Last commit: Aug 2026</span>
+              </div>
+              <a href="https://github.com/bkablam11/PrintPay_app" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+          <div class="portfolio-card" id="project-card-5">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/gaming.png" class="portfolio-img" alt="gaming-site" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <h4>gaming-site</h4>
+              <p>Plateforme web de gestion de jeux vidéo accueillant 500+ utilisateurs actifs mensuels avec un temps de réponse moyen de 1.2s et 99.5% de disponibilité. Stack: PHP + JavaScript + MySQL + Docker + CI/CD GitHub Actions.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">PHP</span>
+                <span class="portfolio-tag">JavaScript</span>
+                <span class="portfolio-tag">CSS</span>
+              </div>
+              <div class="mt-2">
+                <span class="badge bg-secondary">������������������������⭐ 7</span>
+                <span class="badge bg-secondary ms-2">�����������������������������🕒 Last commit: Aug 2026</span>
+              </div>
+              <a href="https://github.com/bkablam11/gaming-site" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+          <div class="portfolio-card" id="project-card-6">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/img/me/wari.png" class="portfolio-img" alt="tontineApp" loading="lazy">
+            </div>
+            <div class="portfolio-body">
+              <h4>tontineApp</h4>
+              <p>Application de tontine adoptée par 12 groupes communautaires gérant 50K+ euros de transactions mensuelles avec réduction de 75% du temps de suivi administratif. Stack: PHP + MySQL + Docker + CI/CD GitHub Actions.</p>
+              <div class="portfolio-tags">
+                <span class="portfolio-tag">App</span>
+                <span class="portfolio-tag">Finance</span>
+                <span class="portfolio-tag">Gestion</span>
+              </div>
+              <div class="mt-2">
+                <span class="badge bg-secondary">����������������������������������������������������������������⭐ 4</span>
+                <span class="badge bg-secondary ms-2">���������������������������������������������������������������������🕒 Last commit: Aug 2026</span>
+              </div>
+              <a href="https://github.com/bkablam11/tontineApp" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm rounded-pill mt-auto">
+                Voir sur GitHub <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- Code Samples                    -->
+  <!-- ============================================ -->
+  <section id="code-samples" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="code-samples-heading">Code Samples</h2>
+        <p>Extraits de code pertinents démontrant mon expertise.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Algorithme de détection d'objets (YOLO11)</h5>
+              <pre class="bg-light p-3 rounded"><code># Pseudo-code simplifié
+for frame in video_stream:
+    detections = model.predict(frame)
+    tracked = tracker.update(detections)
+    visualize(tracked)
+</code></pre>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-2">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Pipeline de traitement de données (ETL)</h5>
+              <pre class="bg-light p-3 rounded"><code>import pandas as pd
+from sklearn.model_selection import train_test_split
+
+df = pd.read_csv('data.csv')
+X_train, X_test, y_train, y_test = train_test_split(
+    df.drop('target', axis=1), df['target'], test_size=0.2
+)
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+</code></pre>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-2">Voir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- Open Source Contributions                    -->
+  <!-- ============================================ -->
+  <section id="open-source" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="open-source-heading">Open Source Contributions</h2>
+        <p>Mes contributions aux projets open source.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">poissonnerie_pro_app</h5>
+              <p class="card-text">Application de gestion commerciale pour poissonnerie.</p>
+              <a href="https://github.com/bkablam11/poissonnerie_pro_app" class="btn btn-outline-primary btn-sm">Voir sur GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">car-tracking</h5>
+              <p class="card-text">Détection et suivi d'objets avec YOLO11 + ByteTrack.</p>
+              <a href="https://github.com/bkablam11/car-tracking" class="btn btn-outline-primary btn-sm">Voir sur GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">PrintPay_app</h5>
+              <p class="card-text">Application mobile de suivi des coûts d'impression.</p>
+              <a href="https://github.com/bkablam11/PrintPay_app" class="btn btn-outline-primary btn-sm">Voir sur GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============================================ -->
+  <!-- Contact                                      -->
+  <!-- ============================================ -->
+  <section id="contact" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="contact-heading">Contactez-Moi</h2>
+        <p>Un projet en vue ou une opportunité de collaboration ? N'hésitez pas à me transmettre un message.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="contact-info-card">
+            <h4 class="fw-bold mb-4">Mes Coordonnées</h4>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-person-circle"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Nom complet</h5>
+                <p>Kablam Edjabrou Ulrich Blanchard</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Téléphone direct</h5>
+                <p>+225 07 48 78 22 05</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>WhatsApp</h5>
+                <p>+225 07 77 51 86 95</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-envelope-open"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Email</h5>
+                <p>bkablam11@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-map"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>Localisation</h5>
+                <p>Abobo Akeikoi, Abidjan, Côte d'Ivoire</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-github"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>GitHub</h5>
+                <p><a href="https://github.com/bkablam11" target="_blank" rel="noopener">/bkablam11</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="bi bi-linkedin"></i>
+              </div>
+              <div class="contact-info-text">
+                <h5>LinkedIn</h5>
+                <p><a href="https://linkedin.com/in/blanchard-kablam" target="_blank" rel="noopener">/blanchard-kablam</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <form class="contact-form" action="https://formspree.io/f/xwleqvrz" method="post" id="contact-form-element">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label fw-semibold">Votre Nom</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Ex: Jean Dupont" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label fw-semibold">Votre Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Ex: jean.dupont@example.com" required>
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label fw-semibold">Sujet</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Ex: Opportunité Data Scientist / IA" required>
+              </div>
+              <div class="col-12">
+                <label for="project-type" class="form-label fw-semibold">Quel type de projet cherchez-vous à réaliser ?</label>
+                <select class="form-control" id="project-type" name="project-type" required>
+                  <option value="" selected disabled>Choisissez une option</option>
+                  <option value="ia">Projet IA / Machine Learning</option>
+                  <option value="web">Site web / Application web</option>
+                  <option value="mobile">Application mobile</option>
+                  <option value="automation">Automatisation / Scripts</option>
+                  <option value="data">Analyse de données / Data Science</option>
+                  <option value="other">Autre</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label fw-semibold">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Décrivez votre besoin ou opportunité..." required></textarea>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-primary rounded-pill px-4 py-2 fw-bold" id="btn-submit-contact">
+                  <i class="bi bi-send-fill me-2"></i> Envoyer le message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- Footer                                       -->
+  <!-- ============================================ -->
+  <footer>
+    <div class="container text-center">
+      <h3 class="text-white fw-bold mb-2">Kablam Edjabrou Ulrich Blanchard</h3>
+      <p class="text-muted small mb-4">Professeur de Collège (ENS) &bull; Développeur en Intelligence Artificielle &bull; Data Scientist &bull; Formateur en Robotique</p>
+
+      <div class="social-links mb-4">
+        <a href="https://github.com/bkablam11" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="mailto:bkablam11@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+        <a href="https://linkedin.com/in/blanchard-kablam" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://wa.me/2250777518695" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
+
+      <p class="mb-0 text-muted small">&copy; 2026 Kablam Edjabrou Ulrich Blanchard. Hébergé sur GitHub Pages.</p>
+      <div class="d-none">
+        Python Machine Learning Deep Learning Computer Vision Django Flask React JavaScript HTML5 CSS3 Data Analysis Pandas NumPy Scikit-learn MLOps Docker Git CI/CD Professeur Enseignement Formation Pédagogie
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <a href="#" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up-short fs-4"></i></a>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Main JS -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Language Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const storedLang = localStorage.getItem('lang') || 'en';
+      setLang(storedLang);
+
+      document.querySelectorAll('#navbarLangDropdown .dropdown-item').forEach(item => {
+        item.addEventListener('click', e => {
+          e.preventDefault();
+          const lang = item.getAttribute('data-lang');
+          setLang(lang);
+        });
+      });
+    });
+
+    function setLang(lang) {
+      document.documentElement.setAttribute('lang', lang);
+      localStorage.setItem('lang', lang);
+      // Hide all [data-lang] elements, then show those matching lang
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        if (el.getAttribute('data-lang') === lang) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+      // Update active dropdown item
+      document.querySelectorAll('#navbarLangDropdown .dropdown-item').forEach(item => {
+        if (item.getAttribute('data-lang') === lang) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    }
+  </script>
+<!-- Image Lightbox Modal -->
+<div class="modal fade" id="imageLightbox" tabindex="-1" aria-labelledby="imageLightboxLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageLightboxLabel">Image</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="" id="lightbox-img" class="img-fluid" alt="Enlarged image">
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
