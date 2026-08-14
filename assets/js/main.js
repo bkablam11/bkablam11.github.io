@@ -285,10 +285,91 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  /* ==========================================================
+     9. LIGHTBOX / ZOOM PLEIN ÉCRAN POUR TOUTES LES IMAGES
+     ========================================================== */
+  initImageLightbox();
 });
 
+function initImageLightbox() {
+  // Création dynamique du conteneur Lightbox s'il n'existe pas encore
+  let lightbox = document.getElementById('custom-image-lightbox');
+  if (!lightbox) {
+    lightbox = document.createElement('div');
+    lightbox.id = 'custom-image-lightbox';
+    lightbox.className = 'lightbox-backdrop';
+    lightbox.innerHTML = `
+      <div class="lightbox-content">
+        <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+        <img src="" class="lightbox-image" alt="Image preview">
+        <div class="lightbox-caption"></div>
+      </div>
+    `;
+    document.body.appendChild(lightbox);
+  }
+
+  const lightboxImg = lightbox.querySelector('.lightbox-image');
+  const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+  const closeBtn = lightbox.querySelector('.lightbox-close');
+
+  const openLightbox = (src, alt) => {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || 'Image Preview';
+    if (alt && alt.trim() !== '') {
+      lightboxCaption.textContent = alt;
+      lightboxCaption.style.display = 'block';
+    } else {
+      lightboxCaption.style.display = 'none';
+    }
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeLightbox = () => {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  // Clic sur bouton fermer
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeLightbox();
+    });
+  }
+
+  // Clic sur l'arrière-plan pour fermer
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox || e.target.classList.contains('lightbox-content')) {
+      closeLightbox();
+    }
+  });
+
+  // Touche Echap pour fermer
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
+
+  // Attacher l'événement au clic sur toutes les images du site
+  const images = document.querySelectorAll(
+    '.portfolio-img, .about-photo-panel img, .hero-img, .testimonial-card img, .portfolio-card img, .about-photo-main img, .about-photo-small img'
+  );
+
+  images.forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      openLightbox(img.src, img.getAttribute('alt') || '');
+    });
+  });
+}
+
 /* ==========================================================
-   9. MACHINE À ÉCRIRE TYPED EFFECT (Bilingue EN & FR)
+   10. MACHINE À ÉCRIRE TYPED EFFECT (Bilingue EN & FR)
    ========================================================== */
 let typeTimeout = null;
 
